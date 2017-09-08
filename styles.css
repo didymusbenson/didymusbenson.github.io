@@ -67,7 +67,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf2fd', end
 
 
 .cards{display:flex;flex-flow:row wrap;}
-.card:hover{box-shadow:0px 0px 3px 3px #FF2442; transition:0.5s ease-in-out;}
+.card:hover{box-shadow:0px 0px 3px 3px #FF2442; transition:0.2s ease-out; transform: scale(1.05);}
 
 .card{
     flex: 0 calc(33% - 34px);
@@ -76,7 +76,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf2fd', end
     overflow:hidden;
     margin:15px;
 
-    transition:0.5s ease-in-out;
+    transition:0.2s ease-out;
     border:2px solid #FF2442;
     font-family:'Montserrat',sans-serif;
 }
