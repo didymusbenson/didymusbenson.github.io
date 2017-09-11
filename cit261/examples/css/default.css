@@ -1,0 +1,48 @@
+.demo_container{
+    width:80vw;
+    max-width:900px;
+    border:1px solid black;
+    margin:auto;
+    margin-top:8em;
+}
+.p{margin:0;}
+
+#fluency{
+    position:fixed;
+    top:15px;
+    cursor:pointer;
+    width:900px;
+    max-width:calc(900px - 1.5em);
+    transition: 0.2s ease-in-out;
+}
+
+
+.fluency-active{left:0;transition:0.5s ease-in-out;}
+.fluency-inactive{left: -700px;}
+.fluency-inactive:hover{left:-675px;}
+/****** RIBBON ********/
+.ribbon:after{
+    content:"";
+    float:left;
+    border:3em solid black;
+      border-right-color:transparent;
+}
+.ribbon div{
+    color:white; background:black;
+    height:6em;
+    overflow:hidden; position:relative;
+    float:left;
+    margin:0;
+    padding:15px;
+    box-sizing:border-box;
+    vertical-align:middle;
+    font-family:sans-serif;
+}
+.ribbon div:before{
+    font-family:sans-serif;
+    content:"Fluency Demonstrated:";
+    font-weight:bold;
+    font-style:italic;
+}
+/****** END - RIBBON ********/
+
