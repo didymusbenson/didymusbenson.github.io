@@ -4,11 +4,11 @@
 .ribbon:after{
     content:"";
     float:left;
-    border:3em solid black;
+    border:3em solid darkred;
       border-right-color:transparent;
 }
 .ribbon div{
-    color:white; background:black;
+    color:white; background:darkred;
     height:6em;
     overflow:hidden; position:relative;
     float:left;
@@ -29,22 +29,26 @@ h1{
     text-align:center;
 
 }
-.demo_container div{
-    width:90%;
-    margin: auto;
-    margin-bottom:30px;
-}
+
 /****** END - RIBBON ********/
 
 
 
 .demo_container{
+
     width:80vw;
     max-width:900px;
     border:1px solid black;
     margin:auto;
     margin-top:8em;
     margin-bottom:8em;
+    border-radius:15px;
+    box-shadow:5px 5px 3px 3px #ddd;
+}
+.demo_container div{
+    width:90%;
+    margin: auto;
+    margin-bottom:30px;
 }
 .p{margin:0;}
 
@@ -60,5 +64,9 @@ h1{
 .fluency-active{left:0;transition:0.5s ease-in-out;}
 .fluency-inactive{left: -700px;}
 .fluency-inactive:hover{left:-675px;}
-.tool{border:1px solid black;}
+.tool{
+    border:1px solid black;
+    border-radius:15px;
+    background:#eee;
+}
 #sauce{width:100%; box-sizing:border-box;margin:0; clear:both; font-family:monospace;font-size:large; resize:vertical;min-height:300px;}
