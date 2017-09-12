@@ -50,5 +50,11 @@ h1{
     text-align:center;
 
 }
+.demo_container div{
+    width:90%;
+    margin: auto;
+    margin-bottom:30px;
+}
+.tool{border:1px solid black;}
 /****** END - RIBBON ********/
 
