@@ -60,4 +60,4 @@ h1{
 .fluency-inactive{left: -700px;}
 .fluency-inactive:hover{left:-675px;}
 .tool{border:1px solid black;}
-textarea{width:100%; box-sizing:border-box; padding:15px; clear:both; font-family:monospace;font-size:large; resize:vertical;}
+#sauce{width:100%; box-sizing:border-box;margin:0; clear:both; font-family:monospace;font-size:large; resize:vertical;min-height:300px;}
