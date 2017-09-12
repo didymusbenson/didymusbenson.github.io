@@ -16,6 +16,15 @@ function activate() {
 
 }
 
+var sauce = document.getElementById("sauce");
+var sourcejs = "./js/" + document.location.href.split("examples/")[1].split(".")[0] + ".js";
+var client = new XMLHttpRequest();
+client.open('GET', sourcejs);
+client.onreadystatechange = function() {
+    sauce.innerHTML = client.responseText;
+}
+client.send();
+
 /****
 #fluency{
     position:fixed;

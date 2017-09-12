@@ -23,12 +23,28 @@
         </div>
     </div>
     <div class="demo_container">
-        <h1 class="title">Vigenere Cipher Tool </h1>
+        <h1 class="title">Vigenere Cipher Demonstration</h1>
         <div class="description">
-            <p>This tool uses the <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenere Cipher</a> to demonstrate functions, arrays, loops, and other JavaScript basics. It works by taking your input string and keyword then translating your output to ciphered text. You can also translate ciphered text back into plaintext if you have the keyword it was encrypted with.</p>
+            <p>This tool uses the <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenere Cipher</a> to demonstrate functions, arrays, loops, and other JavaScript basics. It does not cover passing parameters, though with some minor adjustments it could. It works by taking your input string and keyword then translating your output to ciphered text. You can also translate ciphered text back into plaintext if you have the keyword it was encrypted with.</p>
+
         </div>
         <div class="tool">
+            <p>Message to encrypt or decrypt:</p>
+            <textarea id="message"></textarea>
+            <div class="justify">
+            <span>Cipher Key: </span><input type="text" id="key"></div>
+            <div class="justify">
+            <button onclick="encrypt()">Encrypt</button><button onclick="decrypt()">Decrypt</button>
+                </div>
 
+            <p>Encrypted or decrypted text:</p>
+            <textarea readonly id="output"></textarea>
+        </div>
+        <div class="raw code">
+        <p>See below the raw javascript used to run this page.</p>
+            <textarea readonly id="sauce">
+
+            </textarea>
         </div>
     </div>
 

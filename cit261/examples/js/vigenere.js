@@ -1,7 +1,8 @@
 var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
-function encrypt(message, key) {
-
+function encrypt() {
+    var message = document.getElementById("message").value.toUpperCase();
+    var key = document.getElementById("key").value.toUpperCase();
     var secretMessage = '',
         keychar = ' ',
         charToChange = ' ',
@@ -10,18 +11,18 @@ function encrypt(message, key) {
         k = 0,
         shift;
 
-    for (i = 0; i < message.Length; i++) {
-
-        if (alphabet - notcontains message[i]) {
+    for (i = 0; i < message.length; i++) {
+        if (!alphabet.includes(message[i])) {
+            // Most likely spaces, but also any non-alphabetical characters like " and ?
             secretMessage += message[i];
         } else {
-            if (k == key.Length) {
+            if (k == key.length) {
                 k = 0;
             }
             charToChange = message[i];
             keychar = key[k];
 
-            for (j = 0; j < alphabet.Length; j++) {
+            for (j = 0; j < alphabet.length; j++) {
                 if (charToChange == alphabet[j]) {
                     charIndex = j;
                 }
@@ -29,23 +30,21 @@ function encrypt(message, key) {
                     keyIndex = j;
                 }
             }
-
             shift = charIndex + keyIndex;
             if (shift >= 26) {
-                shift = shift - 26;
+                shift -= 26;
             }
-
             secretMessage += alphabet[shift];
             k += 1;
         }
-
-
     }
-    return secretMessage
+    document.getElementById("output").innerHTML = secretMessage;
+
 }
 
-function decrypt(message, key) {
-
+function decrypt() {
+    var message = document.getElementById("message").value.toUpperCase();
+    var key = document.getElementById("key").value.toUpperCase();
     var secretMessage = '',
         keychar = ' ',
         charToChange = ' ',
@@ -54,18 +53,16 @@ function decrypt(message, key) {
         k = 0,
         shift;
 
-    for (i = 0; i < message.Length; i++) {
-
-        if (alphabet - notcontains message[i]) {
+    for (i = 0; i < message.length; i++) {
+        if (!alphabet.includes(message[i])) {
             secretMessage += message[i];
         } else {
-            if (k == key.Length) {
+            if (k == key.length) {
                 k = 0;
             }
             charToChange = message[i];
             keychar = key[k];
-
-            for (j = 0; j < alphabet.Length; j++) {
+            for (j = 0; j < alphabet.length; j++) {
                 if (charToChange == alphabet[j]) {
                     charIndex = j;
                 }
@@ -73,16 +70,13 @@ function decrypt(message, key) {
                     keyIndex = j;
                 }
             }
-
             shift = charIndex - keyIndex;
             if (shift < 0) {
-                shift = shift + 26;
+                shift += 26;
             }
             secretMessage += alphabet[shift];
             k += 1;
         }
-
-
     }
-    return secretMessage;
+    document.getElementById("output").innerHTML = secretMessage;
 }

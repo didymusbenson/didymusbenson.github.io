@@ -1,0 +1,13 @@
+textarea{width:calc(100% - 60px); box-sizing:border-box; padding:15px; margin:0px 30px;clear:both; font-family:monospace;font-size:large; resize:vertical;}
+span{margin:15px;padding-top:3px;}
+input{margin:15px ; font-family:monospace;font-size:large;}
+.tool p{width:100%; padding:15px; margin:0;clear:both;}
+button{margin: 0px 15px; font-size:large;}
+.justify{display:flex; justify-content:center;}
+.tool div{
+    width:90%;
+    margin: auto;
+    margin-bottom:0px;
+}
+#output{margin-bottom:30px;}
+.tool{padding:30px; box-sizing:border-box;}
