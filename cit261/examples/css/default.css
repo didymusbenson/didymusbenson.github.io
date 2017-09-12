@@ -1,3 +1,5 @@
+*{font-family:sans-serif;}
+
 .demo_container{
     width:80vw;
     max-width:900px;
@@ -15,7 +17,6 @@
     max-width:calc(900px - 1.5em);
     transition: 0.2s ease-in-out;
 }
-
 
 .fluency-active{left:0;transition:0.5s ease-in-out;}
 .fluency-inactive{left: -700px;}
@@ -36,13 +37,18 @@
     padding:15px;
     box-sizing:border-box;
     vertical-align:middle;
-    font-family:sans-serif;
+
 }
 .ribbon div:before{
-    font-family:sans-serif;
+
     content:"Fluency Demonstrated:";
     font-weight:bold;
     font-style:italic;
+}
+
+h1{
+    text-align:center;
+
 }
 /****** END - RIBBON ********/
 
