@@ -1,5 +1,4 @@
 *{font-family:sans-serif;}
-
 /****** RIBBON ********/
 .ribbon:after{
     content:"";
@@ -16,26 +15,25 @@
     padding:15px;
     box-sizing:border-box;
     vertical-align:middle;
-
+    width:700px;
 }
 .ribbon div:before{
-
     content:"Fluency Demonstrated:";
     font-weight:bold;
     font-style:italic;
 }
-
-h1{
-    text-align:center;
-
+#fluency{
+    position:fixed;
+    top:15px;
+    cursor:pointer;
+    width:900px;
+    max-width:calc(900px - 1.5em);
+    transition: 0.2s ease-in-out;
 }
-
 /****** END - RIBBON ********/
 
-
-
+h1{text-align:center;}
 .demo_container{
-
     width:80vw;
     max-width:900px;
     border:1px solid black;
@@ -51,16 +49,6 @@ h1{
     margin-bottom:30px;
 }
 .p{margin:0;}
-
-#fluency{
-    position:fixed;
-    top:15px;
-    cursor:pointer;
-    width:900px;
-    max-width:calc(900px - 1.5em);
-    transition: 0.2s ease-in-out;
-}
-
 .fluency-active{left:0;transition:0.5s ease-in-out;}
 .fluency-inactive{left: -700px;}
 .fluency-inactive:hover{left:-675px;}
@@ -68,5 +56,86 @@ h1{
     border:1px solid black;
     border-radius:15px;
     background:#eee;
+    position:relative;
+    z-index:0;
 }
-#sauce{width:100%; box-sizing:border-box;margin:0; clear:both; font-family:monospace;font-size:large; resize:vertical;min-height:300px;}
+#sauce, #css_sauce{
+    width:100%;
+    box-sizing:border-box;
+    margin:0;
+    clear:both;
+    font-family:monospace;
+    font-size:large;
+    resize:vertical;
+    min-height:300px;
+}
+
+/********** HUE, THE MANATEE ***************/
+.ooer{/*TO DO*/}
+.hue {text-align:center; margin:auto; width:100%; }
+.tool .rainbow {position:absolute; width:100%; height: 100%; top:0; left:0;  border-radius:15px; z-index:-2;}
+.hue img{margin-top:35px;}
+.rainbow {
+  animation-name: rainbow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.hue:hover{
+  animation-name: spaz;
+  animation-duration: .08s;
+  animation-iteration-count: infinite;
+}
+.bassdrop:hover{  animation-name: bassdrop;
+  animation-duration: .15s;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 11.8s; /* Chrome, Safari, Opera */
+  animation-delay: 11.8s;
+  }
+.hue img:hover{
+  animation-name: grow;
+  animation-duration: 27s;
+  -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+  animation-delay: 3s;
+  }
+
+@keyframes rainbow {
+  0%   { background-color: #ff0000; }
+  10%  { background-color: #ff8000; }
+  20%  { background-color: #ffff00; }
+  30%  { background-color: #80ff00; }
+  40%  { background-color: #00ff00; }
+  50%  { background-color: #00ff80; }
+  60%  { background-color: #00ffff; }
+  70%  { background-color: #0080ff; }
+  80%  { background-color: #0000ff; }
+  90%  { background-color: #8000ff; }
+  100% { background-color: #ff0080; }
+}
+
+@keyframes spaz {
+  0%,100%   {
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+  }
+  50%{
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);}
+}
+
+@keyframes grow {
+  100%{transform:scale(3,3) rotate(30deg);}
+}
+
+@keyframes bassdrop{
+      0%,100%   {
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+  }
+  50%{
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);}
+}
