@@ -1,0 +1,114 @@
+.tool{
+    border:1px solid black;
+    background: linear-gradient( to bottom, #1F3B4C, #1F3B4C 50%, #1D303D 50%, #1D303D);
+    background-size: 100% 6px;
+}
+.tool ::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+    border-radius:15px;
+}
+.tool ::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear, left bottom, left top,
+        color-stop(0.44, rgb(122,153,217)),
+        color-stop(0.72, rgb(73,125,189)),
+        color-stop(0.86, rgb(28,58,148)));
+}
+
+.itemwrap {
+    width: 200px;
+    padding: 5px;
+    padding-left: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.menu {
+    z-index:1;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.menu .itemwrap {
+    z-index:1;
+    border-radius: 9999em;
+    background: #121722;
+    border: 4px solid #121722;
+    font-family: 'Orbitron'
+}
+.menu .itemwrap:hover{
+
+    border: 4px solid #C32C1B;
+    background: linear-gradient(to bottom, #000000, #53181B);
+}
+
+.navi {
+    visibility: hidden;
+}
+
+.itemwrap + img {
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    margin-top: 30px;
+    left: 30%;
+    animation:slideout .2s ease-out;
+    -webkit-animation:slideout .2s ease-out;
+}
+.itemwrap:hover + img {
+    opacity: 1;
+    animation: slidein .2s ease-out;
+}
+.itemwrap:hover .navi {
+    z-index:3;
+    visibility: visible;
+    float: right;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: -10px;
+    width: 8px;
+    height: 8px;
+    background: #D9D25A;
+    -moz-border-radius: 9999em;
+    -webkit-border-radius: 9999em;
+    border-radius: 9999em;
+    box-shadow: 0 0 15px 2px #DDAB2E;
+    animation: dance 4s ease-in-out infinite;
+}
+
+.itemwrap a{ text-decoration:none; color:white; display:block;}
+
+
+/********* ANIMATIONS **************************************************/
+@keyframes dance {
+    0% {transform: translate(-1px, 0px);}
+    15% {transform: translate(1px, 1px);}
+    30% {transform: translate(1px, -1px);}
+    45% {transform: translate(0px, 1px);}
+    60% {transform: translate(-1px, -1px);}
+    75% {transform: translate(-1px, 1px);}
+    100% {transform: translate(-1px, 0px);}
+}
+@keyframes slidein {
+    from {transform: translate(300px, 0px); opacity: 0;}
+    to {transform: translate(0px, 0px); opacity: 1;}
+}
+@keyframes slideout {
+    from {transform: translate(0px, 0px); opacity: 1;}
+    to {transform: translate(-300px, 0px); opacity: 0;}
+}
+@-webkit-keyframes slidein {
+    from{-webkit-transform: translate(300px, 0px); opacity: 0;}
+    to {-webkit-transform: translate(0px, 0px); opacity: 1;}
+}
+@-webkit-keyframes slideout {
+    from{-webkit-transform: translate(0px, 0px); opacity: 1;}
+    to {-webkit-transform: translate(-300px, 0px); opacity: 0;}
+}
+

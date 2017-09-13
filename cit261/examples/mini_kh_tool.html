@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mini KH Tool</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/mini_kh_tool.css">
+    <link href="https://fonts.googleapis.com/css?family=Sarina|Open+Sans:800|Yellowtail|Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div id="fluency" class="fluency-inactive">
+        <div class="ribbon">
+            <div>
+                <p>
+                    Working with JSONs, CSS transitions/transformations/animations, manipulating CSS properties, and other nonsense.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="demo_container">
+        <h1 class="title">Mini KH Tool</h1>
+        <div class="description">
+            <p>
+                Here I have ripped some of the guts out of my Kingdom Hearts Reference repository to show off what I did. You can find the entire tool <a href="http://didymusbenson.github.io/kh-tools/">here</a> (though it's still a work in progress).
+            </p>
+            <p>
+                You will see below examples of CSS tranforms, transitions, animations, and DOM manipulation from my JavaScript. The data to be displayed in the tables you'll see is stored in a few JSON objects that I'm making the AJAX request to pull. You won't see these objects in the source below, but I've told my code to console.log them so you can open up the dev tools and see those objects.
+            </p>
+        </div>
+        <div class="tool">
+            <div class="menu">
+                <div class="menuitem">
+                    <div class="itemwrap"><div class="navi"></div>
+                        <a href="#khfmsynth">Synthesis Sets</a>
+                    </div>
+
+                </div>
+                <div class="menuitem">
+                    <div class="itemwrap"><div class="navi"></div>
+                        <a href="#khfmsynthitems">Synthesis Items</a>
+                    </div>
+                </div>
+                <div class="menuitem">
+                    <div class="itemwrap" id="khfm"><div class="navi"></div>
+                        <a href="#khfmtrinity">Trinity Locations</a>
+                    </div>
+                </div>
+                <div class="menuitem">
+                    <div class="itemwrap" id="kh2fm"><div class="navi"></div>
+                        <a href="#khfmpostcards">Postcards</a>
+                    </div>
+                </div>
+                <div class="menuitem">
+                    <div class="itemwrap" id="kh2fm"><div class="navi"></div>
+                        <a href="#khfmdalmations">Dalmations</a>
+                    </div>
+                </div>
+                <div class="menuitem">
+                    <div class="itemwrap" id="kh2fm"><div class="navi"></div>
+                        <a href="#khfmmagic">Magic Unlocks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rawcode">
+            <p>JavaScript Source:</p>
+            <textarea readonly id="sauce">
+
+            </textarea>
+        </div>
+        <div class="rawcode">
+            <p>CSS Source:</p>
+            <textarea readonly id="css_sauce">
+
+            </textarea>
+        </div>
+    </div>
+
+
+    <script src="./js/default.js"></script>
+    <script src="./js/mini_kh_tool.js"></script>
+</body>
+
+</html>
