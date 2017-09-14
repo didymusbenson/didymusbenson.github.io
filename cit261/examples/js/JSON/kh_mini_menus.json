@@ -1,0 +1,1045 @@
+[
+      {
+         "title":"Synthesis Sets",
+         "anchor":"synth",
+          "description": "Sets are unlocked as you create new synthesis items. Set 2 unlocks after making 3 items. The third set after making 9, the fourth after 15, fifth after 21, and the sixth set requires you to synthesize all 30 previous items. See \"Synthesis Items\" to find where to get them.",
+         "data":[
+            {
+               "synth_set":1,
+               "item_name":"Mega Potion",
+               "ingredients":"1 Spirit Shard, 1 Power Shard, 4 Mythril Shard"
+            },
+            {
+               "synth_set":1,
+               "item_name":"Cottage",
+               "ingredients":"1 Lucid Shard, 1 Bright Shard"
+            },
+            {
+               "synth_set":1,
+               "item_name":"Energy Bangle",
+               "ingredients":"2 Spirit Shard, 1 Bright Shard"
+            },
+            {
+               "synth_set":1,
+               "item_name":"Power Chain",
+               "ingredients":"2 Power Shard, 1 Lucid Shard"
+            },
+            {
+               "synth_set":1,
+               "item_name":"Magic Armlet",
+               "ingredients":"3 Blaze Shard, 3 Frost Shard, 3 Thunder Shard"
+            },
+            {
+               "synth_set":1,
+               "item_name":"EXP Earring*",
+               "ingredients":"1 Fury Stone, 1 Power Stone, 1 Mythril Stone, 1 Serenity Power, 3 Dark Matter"
+            },
+            {
+               "synth_set":2,
+               "item_name":"Mega-Ether",
+               "ingredients":"1 Blaze Shard, 1 Frost Shard, 1 Thunder Shard, 2 Mythril"
+            },
+            {
+               "synth_set":2,
+               "item_name":"Guard Earring",
+               "ingredients":"3 Bright Shard, 1 Frost Shard, 3 Mythril Shard"
+            },
+            {
+               "synth_set":2,
+               "item_name":"Angel Bangle",
+               "ingredients":"3 Thunder Shard, 1 Bright Gem"
+            },
+            {
+               "synth_set":2,
+               "item_name":"Golem Chain",
+               "ingredients":"3 Blaze Shard, 1 Spirit Gem"
+            },
+            {
+               "synth_set":2,
+               "item_name":"Rune Armlet",
+               "ingredients":"3 Blaze Gem, 3 Frost Gem, 3 Thunder Gem"
+            },
+            {
+               "synth_set":2,
+               "item_name":"Moogle Badge*",
+               "ingredients":"1 Blazing Stone, 1 Frost Stone, 1 Lightning Stone, 5 Mythril, 3 Orichalcum"
+            },
+            {
+               "synth_set":3,
+               "item_name":"Ap Up",
+               "ingredients":"2 Blaze Gem, 2 Frost Gem, 2 Thunder Gem, 4 Mythril"
+            },
+            {
+               "synth_set":3,
+               "item_name":"Dark Ring",
+               "ingredients":"2 Lucid Gem, 2 Bright Gem"
+            },
+            {
+               "synth_set":3,
+               "item_name":"Master Earring",
+               "ingredients":"5 Spirit Shard, 3 Spirit Gem, 1 Fury Stone"
+            },
+            {
+               "synth_set":3,
+               "item_name":"Gaia Bangle",
+               "ingredients":"5 Lucid Shard, 3 Lucid Gem, 1 Lightning Stone"
+            },
+            {
+               "synth_set":3,
+               "item_name":"Titan Chain",
+               "ingredients":"5 Power Shard, 3 Power Gem, 1 Power Stone"
+            },
+            {
+               "synth_set":3,
+               "item_name":"Mythril",
+               "ingredients":"5 Mythril Shard, 1 Mythril Stone, 1 Mystery Goo"
+            },
+            {
+               "synth_set":4,
+               "item_name":"Elixir",
+               "ingredients":"1 Power Crystal, 1 Shiny Crystal, 2 Bright Crystal, 3 Orichalcum"
+            },
+            {
+               "synth_set":4,
+               "item_name":"Defense Up",
+               "ingredients":"3 Lucid Shard, 3 Bright Shard, 2 Bright Gem, 1 Power Crystal, 5 Orichalcum"
+            },
+            {
+               "synth_set":4,
+               "item_name":"Heartgaurd",
+               "ingredients":"3 Lucid Gem, 1 Lucid Crystal, 1 Bright Crystal"
+            },
+            {
+               "synth_set":4,
+               "item_name":"Three Stars",
+               "ingredients":"1 Power Gem, 3 Mystery Goo, 1 Shiny Crystal"
+            },
+            {
+               "synth_set":4,
+               "item_name":"Atlas Armlet",
+               "ingredients":"5 Blaze Shard, 5 Frost Shard, 5 Thunder Shard, 1 Mystery Goo, 3 Dark Matter"
+            },
+            {
+               "synth_set":4,
+               "item_name":"Crystal Crown",
+               "ingredients":"5 Lucid Crystal, 1 Power Crystal, 1 Shiny Crystal, 3 Blazing Stone, 3 Frost Stone"
+            },
+            {
+               "synth_set":5,
+               "item_name":"Dark Matter",
+               "ingredients":"9 Lucid Shard, 1 Gale 2 Mythril"
+            },
+            {
+               "synth_set":5,
+               "item_name":"Megalixir",
+               "ingredients":"5 Lucid Gem, 3 Lucid Crystal, 2 Gale, 1 Dark Matter"
+            },
+            {
+               "synth_set":5,
+               "item_name":"Power Up",
+               "ingredients":"5 Spirit Shard, 3 Spirit Gem, 5 Power Shard, 3 Power Gem, 1 Dark Matter"
+            },
+            {
+               "synth_set":5,
+               "item_name":"Cosmic Arts",
+               "ingredients":"5 Bright Shard, 3 Bright Gem, 1 Bright Crystal, 3 Mythril Stone"
+            },
+            {
+               "synth_set":5,
+               "item_name":"EXP Bracelet",
+               "ingredients":"1 Energy Stone, 1 Dazzling Stone, 1 Stormy Stone, 8 Orichalcum, 3 Dark Matter"
+            },
+            {
+               "synth_set":5,
+               "item_name":"Ribbon",
+               "ingredients":"5 Blaze Gem, 5 Frost Gem, 5 Thunder Gem, 1 Gale, 3 Serenity Power"
+            },
+            {
+               "synth_set":6,
+               "item_name":"Fantasista",
+               "ingredients":"3 Fury Stone, 3 Power Stone, 3 Mythril Stone, 5 Energy Stone"
+            },
+            {
+               "synth_set":6,
+               "item_name":"Seven Elements",
+               "ingredients":"3 Blazing Stone, 3 Frost Stone, 3 Lightning Stone, 5 Dazzling Stone"
+            },
+            {
+               "synth_set":6,
+               "item_name":"Ultima Weapon",
+               "ingredients":"5 Thunder Gem, 5 Mystery Goo, 3 Serenity Power, 3 Stormy Stone, 3 Dark Matter"
+            }
+         ]
+      },
+      {
+         "title":"Synthesis Items",
+         "anchor":"synthitems",
+          "description": "\"#\" refers to the number of the items needed to complete Moogle Synthesis.",
+         "data":[
+            {
+               "item_name":"Blaze Gem",
+               "number_needed":10,
+               "enemy_drop":"Bandit / Fat Bandit",
+               "item_location":"Agrabah",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Blaze Shard",
+               "number_needed":12,
+               "enemy_drop":"Red Nocturne",
+               "item_location":"Monstro",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Blazing Stone",
+               "number_needed":7,
+               "enemy_drop":"Chimera",
+               "item_location":"Halloween Town",
+               "fighting_tips":"Knock the heads away from the body to get more stones!"
+            },
+            {
+               "item_name":"Bright Crystal",
+               "number_needed":4,
+               "enemy_drop":"Defender",
+               "item_location":"Traverse Town / Holllow Bastion",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Bright Gem",
+               "number_needed":8,
+               "enemy_drop":"Search Ghost",
+               "item_location":"Traverse Town",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Bright Shard",
+               "number_needed":13,
+               "enemy_drop":"Green Requiem",
+               "item_location":"Deep Jungle / Hollow Bastion",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Dazzling Stone",
+               "number_needed":6,
+               "enemy_drop":"Jet Balloon",
+               "item_location":"Neverland",
+               "fighting_tips":"Cast Aeroga on yourself so they can't hit you, use Treasure Magnets to grab the items"
+            },
+            {
+               "item_name":"Dark Matter",
+               "number_needed":14,
+               "enemy_drop":"Treasure / Synthesis",
+               "item_location":"Treasure / Synthesis",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Energy Stone",
+               "number_needed":6,
+               "enemy_drop":"Stealth Soldier",
+               "item_location":"Hollow Bastion",
+               "fighting_tips":"In the area where you fought Riku. They're invisible and fast. Just fight, block, Aeroga etc."
+            },
+            {
+               "item_name":"Frost Gem",
+               "number_needed":10,
+               "enemy_drop":"Sea Neon / Sheltering Zone",
+               "item_location":"Atlantica",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Frost Shard",
+               "number_needed":10,
+               "enemy_drop":"Blue Rhapsody",
+               "item_location":"Wonderland / Monstro / Hollow Bastion",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Frost Stone",
+               "number_needed":7,
+               "enemy_drop":"Grand Ghost",
+               "item_location":"Monstro",
+               "fighting_tips":"You have to use healing items to hurt it. 1 Elixer and 2 Hi Potions or 5ish Hi Potions"
+            },
+            {
+               "item_name":"Fury Stone",
+               "number_needed":5,
+               "enemy_drop":"Gigas Shadow",
+               "item_location":"Wonderland",
+               "fighting_tips":"Do not let them hit Sora, or they will disappear. Use Aeroga and Strike Raid"
+            },
+            {
+               "item_name":"Gale",
+               "number_needed":8,
+               "enemy_drop":"Angel Star / Invisible",
+               "item_location":"End of the World",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Lightning Stone",
+               "number_needed":5,
+               "enemy_drop":"Black Ballad",
+               "item_location":"Deep Jungle",
+               "fighting_tips":"Shell Game"
+            },
+            {
+               "item_name":"Lucid Crystal",
+               "number_needed":9,
+               "enemy_drop":"Darkball",
+               "item_location":"Everywhere",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Lucid Gem",
+               "number_needed":13,
+               "enemy_drop":"Gargoyle / Wight Knight",
+               "item_location":"Halloween Town",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Lucid Shard",
+               "number_needed":37,
+               "enemy_drop":"Shadow",
+               "item_location":"Wonderland",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Mystery Goo",
+               "number_needed":10,
+               "enemy_drop":"(mushrooms)",
+               "item_location":"Everywhere",
+               "fighting_tips":"For White Mushrooms, do the same spell 3 times in a row. Black ones need critical hits."
+            },
+            {
+               "item_name":"Mythril",
+               "number_needed":17,
+               "enemy_drop":"Treasure / Synthesis",
+               "item_location":"Treasure / Synthesis",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Mythril shard",
+               "number_needed":12,
+               "enemy_drop":"Barrel Spider / Pot Spider",
+               "item_location":"Agrabah / Monstro",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Mythril Stone",
+               "number_needed":8,
+               "enemy_drop":"Pot Scorpion",
+               "item_location":"Agrabah",
+               "fighting_tips":"Smash the pots that don't move first, then hit the last pot"
+            },
+            {
+               "item_name":"Orichalcum",
+               "number_needed":18,
+               "enemy_drop":"Treasure / Synthesis / Shops",
+               "item_location":"Treasure / Synthesis / Shops",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Power Crystal",
+               "number_needed":3,
+               "enemy_drop":"Wyvern",
+               "item_location":"Traverse Town / Hollow Bastion",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Power Gem",
+               "number_needed":11,
+               "enemy_drop":"Pirate / Air Pirate / Battleship",
+               "item_location":"Neverland",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Power Shard",
+               "number_needed":13,
+               "enemy_drop":"Bouncywild / Powerwild",
+               "item_location":"Deep Jungle",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Power Stone",
+               "number_needed":5,
+               "enemy_drop":"Sniperwild",
+               "item_location":"Traverse Town",
+               "fighting_tips":"Don't let them see you!"
+            },
+            {
+               "item_name":"Serenity Power",
+               "number_needed":7,
+               "enemy_drop":"Ping Agaricus",
+               "item_location":"Deep Jungle / Atlantica",
+               "fighting_tips":"Aeroga Sora, use stop, target head, use ragnarok and other combos to get high numbers!"
+            },
+            {
+               "item_name":"Shiny Crystal",
+               "number_needed":3,
+               "enemy_drop":"Wizard",
+               "item_location":"Everywhere",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Spirit Gem",
+               "number_needed":7,
+               "enemy_drop":"Air Soldier",
+               "item_location":"Traverse Town / Hollow Bastion",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Spirit Shard",
+               "number_needed":13,
+               "enemy_drop":"Large Body / Soldier",
+               "item_location":"Hollow Bastion",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Stormy Stone",
+               "number_needed":4,
+               "enemy_drop":"Neo Shadow",
+               "item_location":"End of the World",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Thunder Gem",
+               "number_needed":15,
+               "enemy_drop":"Aquatank / Screwdriver",
+               "item_location":"Atlantica",
+               "fighting_tips":""
+            },
+            {
+               "item_name":"Thunder Shard",
+               "number_needed":12,
+               "enemy_drop":"Yellow Opera",
+               "item_location":"Wonderland / Neverland",
+               "fighting_tips":""
+            }
+         ]
+      },
+      {
+         "title":"Trinity Locations",
+         "anchor":"trinity",
+          "description":"Unlock the Blue trinity by defeating the Guard Armor in Traverse Town. You get the Red trinity from completing Deep Jungle, Green from completing Agrabah, yellow from beating the Hercules cup at the Coliseum and White from defeating Riku the first time in Hollow Bastion.",
+         "data":[
+            {
+               "color":"Blue",
+               "world":"Traverse Town",
+               "location":"Near what looks like an outdoor restaurant in the First District",
+               "prize":"Postcard"
+            },
+            {
+               "color":"Blue",
+               "world":"Traverse Town",
+               "location":"Near the entrance of Traverse Town in the First District",
+               "prize":"Munny"
+            },
+            {
+               "color":"Blue",
+               "world":"Traverse Town",
+               "location":"On a ramp that leads behind the Lady and the Tramp statue in the Third District",
+               "prize":"Munny and a Camping Set"
+            },
+            {
+               "color":"Blue",
+               "world":"Traverse Town",
+               "location":"Near the Save Point in Merlin's House",
+               "prize":"Munny and Mega-Ether"
+            },
+            {
+               "color":"Blue",
+               "world":"Wonderland",
+               "location":"In a small alcove in Lotus Forest",
+               "prize":"Ether, Potion, Tent, and MP"
+            },
+            {
+               "color":"Blue",
+               "world":"Wonderland",
+               "location":"In a hidden alcove in Lotus Forest; after defeating the Queen, push the rock into the lake while you're a giant and mushrooms will appear. Jump on the mushrooms to find the hidden trinity.",
+               "prize":"Camping Set and MP"
+            },
+            {
+               "color":"Blue",
+               "world":"Olympus",
+               "location":"Under the large statue to the left of the entrance of the Coliseum",
+               "prize":"Mythril Shard"
+            },
+            {
+               "color":"Blue",
+               "world":"Olympus",
+               "location":"Under the large statue to the right of the entrance of the Coliseum",
+               "prize":"Dalmatians 22, 23, 24"
+            },
+            {
+               "color":"Blue",
+               "world":"Deep Jungle",
+               "location":"By the table at the campsite",
+               "prize":"Dalmatians 34, 35, 36"
+            },
+            {
+               "color":"Blue",
+               "world":"Deep Jungle",
+               "location":"In the Climbing Trees",
+               "prize":"Dalmatians 31, 32, 33"
+            },
+            {
+               "color":"Blue",
+               "world":"Agrabah",
+               "location":"Drop into the Bazaar",
+               "prize":"Munny and Mega-Elixir"
+            },
+            {
+               "color":"Blue",
+               "world":"Agrabah",
+               "location":"In the Cave of Wonders waterways",
+               "prize":"Thunder-G"
+            },
+            {
+               "color":"Blue",
+               "world":"Monstro",
+               "location":"In Chamber 5",
+               "prize":"Cottage and Munny"
+            },
+            {
+               "color":"Blue",
+               "world":"Monstro",
+               "location":"On a pile of debris in the mouth",
+               "prize":"2 Potions, Cottage, and Munny"
+            },
+            {
+               "color":"Blue",
+               "world":"Monstro",
+               "location":"In the center of the throat",
+               "prize":"Myhtril Shard and Munny"
+            },
+            {
+               "color":"Blue",
+               "world":"Hollow Bastion",
+               "location":"In the Dungeon. Enter the Lift Stop through the Grand Hall. Use the blue crystal and go down a level. Use the lift in the Waterway to go down another level. Also accessible through the base level, behind a wall that Beast must break down.",
+               "prize":"Cottage, Mega-Potion, Mega-Ether, and HP"
+            },
+            {
+               "color":"Blue",
+               "world":"Hollow Bastion",
+               "location":"Near the entrance of the castle on a platform lead to by a floating platform",
+               "prize":"2 Cottages, Mega-Elixir, and MP"
+            },
+            {
+               "color":"Green",
+               "world":"Traverse Town",
+               "location":"In Cid's Accessory Shop in the First District",
+               "prize":"Synthesis Shop entrance"
+            },
+            {
+               "color":"Green",
+               "world":"Wonderland",
+               "location":"In the Rabbit Hole",
+               "prize":"Elixir"
+            },
+            {
+               "color":"Green",
+               "world":"Wonderland",
+               "location":"In the Bizarre Room; in the fireplace while tiny",
+               "prize":"Mythril Shard"
+            },
+            {
+               "color":"Green",
+               "world":"Olympus",
+               "location":"Near the cup results by the entrance to the Coliseum",
+               "prize":"Mythril"
+            },
+            {
+               "color":"Green",
+               "world":"Deep Jungle",
+               "location":"Outside the tunnel in the treetops",
+               "prize":"HP and Mythril Shard"
+            },
+            {
+               "color":"Green",
+               "world":"Agrabah",
+               "location":"In the storage room",
+               "prize":"Power Up"
+            },
+            {
+               "color":"Green",
+               "world":"Monstro",
+               "location":"On top of the ship in the mouth",
+               "prize":"Mythril Shard"
+            },
+            {
+               "color":"Green",
+               "world":"Neverland",
+               "location":"In the Ship's Hold",
+               "prize":"Entrance to Captain's cabin"
+            },
+            {
+               "color":"Green",
+               "world":"Hollow Bastion",
+               "location":"By the Save Point in the Library",
+               "prize":"Azal Vol. 3"
+            },
+            {
+               "color":"Red",
+               "world":"Traverse Town",
+               "location":"By the end of the alley behind the Accessory Shop in the First District",
+               "prize":"Dalmatians 4, 5, 6"
+            },
+            {
+               "color":"Red",
+               "world":"Traverse Town",
+               "location":"In the water grate behind the hotel in the Second District",
+               "prize":"Secret Waterway entrance"
+            },
+            {
+               "color":"Red",
+               "world":"Traverse Town",
+               "location":"On the roof of the Gizmo Shop in the Second District",
+               "prize":"Interaction with the bell"
+            },
+            {
+               "color":"Red",
+               "world":"Agrabah",
+               "location":"In the Cave of Wonders treasure room",
+               "prize":"Mythril Shard and Munny"
+            },
+            {
+               "color":"Red",
+               "world":"Halloween Town",
+               "location":"In the entrance room of Oogie's Manor",
+               "prize":"Mythril Shard"
+            },
+            {
+               "color":"Red",
+               "world":"Hollow Bastion",
+               "location":"On the high level of the Grand Hall, entered through the Library",
+               "prize":"Emblem piece"
+            },
+            {
+               "color":"White",
+               "world":"Traverse Town",
+               "location":"In the Secret Waterway in the Second District",
+               "prize":"Orichalcum"
+            },
+            {
+               "color":"White",
+               "world":"Wonderland",
+               "location":"When the Bizarre Room is sideways, light the two lamps with Fire by locking-on and jump into the picture.",
+               "prize":"Lady Luck Keyblade"
+            },
+            {
+               "color":"White",
+               "world":"Olympus",
+               "location":"In the center of the Coliseum gates",
+               "prize":"Violetta Staff"
+            },
+            {
+               "color":"White",
+               "world":"Deep Jungle",
+               "location":"In the cave by the Deep Jungle Keyhole",
+               "prize":"Orichalcum"
+            },
+            {
+               "color":"White",
+               "world":"Agrabah",
+               "location":"Cave of Wonders entrance",
+               "prize":"Ifirit Belt"
+            },
+            {
+               "color":"White",
+               "world":"Monstro",
+               "location":"In Chamber 6",
+               "prize":"Dark Matter"
+            },
+            {
+               "color":"White",
+               "world":"Atlantica",
+               "location":"In the center of the path leading to Triton's Throne",
+               "prize":"Orichalcum"
+            },
+            {
+               "color":"White",
+               "world":"Halloween Town",
+               "location":"On Moonlight Hill",
+               "prize":"Dalmatians 67,68, and 69"
+            },
+            {
+               "color":"White",
+               "world":"Neverland",
+               "location":"On the deck",
+               "prize":"Dalmatians 43,44, and 45"
+            },
+            {
+               "color":"White",
+               "world":"Hollow Bastion",
+               "location":"By the entrance of the world on a floating piece of land",
+               "prize":"Thundaga-G"
+            },
+            {
+               "color":"Yellow",
+               "world":"Traverse Town",
+               "location":"Outside Merlin's House near a stack of crates",
+               "prize":"Power Up"
+            },
+            {
+               "color":"Yellow",
+               "world":"Olympus",
+               "location":"In the Coliseum Lobby",
+               "prize":"Olympus Coliseum Keyhole"
+            },
+            {
+               "color":"Yellow",
+               "world":"Agrabah",
+               "location":"In the Cave of Wonders hall, above the dark chamber",
+               "prize":"Basement chamber entrance"
+            },
+            {
+               "color":"Yellow",
+               "world":"Neverland",
+               "location":"In the Ship's Hold in front of a locked door",
+               "prize":"Opens door"
+            }
+         ]
+      },
+      {
+         "title":"Postcards",
+         "anchor":"postcards",
+          "description":"Prizes, in order: Cottage, Mythril Shard, Mega-Potion, Mega-Ether, Elixir, Megalixir, Orichalcum, Defense Up and AP Up, Power Up and Defense Up.",
+         "data":[
+            {
+               "number":1,
+               "area":"The first postcard can easily be found in the first district. Go past the Accessory Shop to find an area with a large blue safe in the corner. Examine the safe for your first postcard."
+            },
+            {
+               "number":2,
+               "area":"From where you got the first postcard, turn around and jump onto the roof of the Accessory Shop. Walk to the other side of the roof (facing the entrance of Traverse Town) and jump onto the ledge on the front of the Accessory Shop. From the ledge, jump to the other side of the roof and look behind the chimney, where a treasure chest is hiding. Open it for your second postcard. Though High Jump or Glide would make getting this postcard easier, they aren't necessary."
+            },
+            {
+               "number":3,
+               "area":"The third postcard can also be found in the first district, this time in the Item Shop. Go up the staircase and you'll be able to see a ceiling fan. Lock on to it, jump, and hit it with your keyblade for the third postcard."
+            },
+            {
+               "number":4,
+               "area":"When entering Traverse Town, go to the left where you'll see what looks like an outdoor restaurant. There should be a clearly visible Blue Trinity. Use it and you'll end up on a balcony above the tables. Open the treasure chest there for the fourth postcard."
+            },
+            {
+               "number":5,
+               "area":"This postcard is in the second district. You'll be able to find it above the Boots & Shoes shop. From where you enter the district, jump on the lamp to the right and then jump to the right corner. You'll land on an awning with a treasure chest on top of it. Open it for the fifth postcard."
+            },
+            {
+               "number":6,
+               "area":"Postcards 6 & 7 are obtained together but require two steps. First, go to the third district. Use lightning on the switch with the lightning symbol on it. After this step, go back to the second district and enter the Gizmo Shop. Step on every raised platform and then examine the clock to obtain two postcards."
+            },
+            {
+               "number":7,
+               "area":"Postcards 6 & 7 are obtained together but require two steps. First, go to the third district. Use lightning on the switch with the lightning symbol on it. After this step, go back to the second district and enter the Gizmo Shop. Step on every raised platform and then examine the clock to obtain two postcards."
+            },
+            {
+               "number":8,
+               "area":"For the eighth postcard, you'll start out in the second district. Go to the right of the Gizmo Shop and you'll see a ladder. Climb the ladder and follow the path on the left of the roof to another roof. Use High Jump or Glide to get to the next roof. Keep going straight ahead on that roof until you hit a passage to the third district. Go through it and you'll end up on a third district balcony. Go to the right of the balcony and examine the corner for Postcard 8."
+            },
+            {
+               "number":9,
+               "area":"The ninth postcard can be found back in the first district in the Accessory Shop. Use the Green Trinity here to open a path to the Synthesis Shop upstairs. Examine the paper on the wall next to the fireplace and you'll get Postcard 9."
+            },
+            {
+               "number":10,
+               "area":"After getting out of Monstro, Geppetto will be available to visit in the first district of Traverse Town. Go to his house and examine the shelf in the corner. You will then receive your final postcard. After collecting every postcard, go to the mailbox in the first district to collect your prizes."
+            }
+         ]
+      },
+      {
+         "title":"Dalmatians",
+         "anchor":"dalmatians",
+          "description":"Rewards: Save 12 puppies to obtain Curaga-G. 21 gets you Firaga-G, 30 for Tundara-G, 42 for Mythril Shard, 51 for a Torn Page and Mythril, 60 for a Megalixir, 72 for Orichalcum, 81 for Ultima-G, and 90 for a Ribbon and Tech Boost ability. Saving all puppies teaches you \"Aeroga\" and gives you the \"Full Gummi Set\"",
+         "data":[
+            {
+               "dalmatians":"1, 2, 3",
+               "abilities_required":"Glide",
+               "world":"Traverse Town",
+               "location":"Behind Merlin's house"
+            },
+            {
+               "dalmatians":"4, 5, 6",
+               "abilities_required":"Red Trinity",
+               "world":"Traverse Town",
+               "location":"Alley in the First District where Sora woke up on his Traverse Town arrival"
+            },
+            {
+               "dalmatians":"7, 8, 9",
+               "abilities_required":"Green Trinity",
+               "world":"Traverse Town",
+               "location":"In the Item Synthesis shop"
+            },
+            {
+               "dalmatians":"10, 11, 12",
+               "abilities_required":"Red Trinity",
+               "world":"Traverse Town",
+               "location":"In the Secret Waterway by the stairs leading to Merlin's house"
+            },
+            {
+               "dalmatians":"13, 14, 15",
+               "abilities_required":"High Jump (optional)",
+               "world":"Wonderland",
+               "location":"On top of a hedge in the Queen's Castle. You can either use a pathway from the Lotus Forest or use the High Jump ability."
+            },
+            {
+               "dalmatians":"16, 17, 18",
+               "abilities_required":"None",
+               "world":"Wonderland",
+               "location":"On top of a tree in Lotus Forest."
+            },
+            {
+               "dalmatians":"19, 20, 21",
+               "abilities_required":"Glide",
+               "world":"Wonderland",
+               "location":"Go through a pathway in the Queen's Castle that leads to Lotus Forest. Glide to the exit to the left."
+            },
+            {
+               "dalmatians":"58, 59, 60",
+               "abilities_required":"None",
+               "world":"Wonderland",
+               "location":"Enter Lotus Forest through painting in Bizarre Room. Cast Thunder while standing under Bell Flowers."
+            },
+            {
+               "dalmatians":"22, 23, 24",
+               "abilities_required":"Blue Trinity",
+               "world":"Olympus Coliseum",
+               "location":"Next to the entrance of the Coliseum"
+            },
+            {
+               "dalmatians":"25, 26, 27",
+               "abilities_required":"None",
+               "world":"Deep Jungle",
+               "location":"Jump across every hippo at the Hippo Lagoon to reach the end."
+            },
+            {
+               "dalmatians":"28, 29, 30",
+               "abilities_required":"None",
+               "world":"Deep Jungle",
+               "location":"Swing across the vines straight ahead and jump to the piece of land next to the one you reach"
+            },
+            {
+               "dalmatians":"31, 32, 33",
+               "abilities_required":"Blue Trinity",
+               "world":"Deep Jungle",
+               "location":"In the Climbing Trees"
+            },
+            {
+               "dalmatians":"34, 35, 36",
+               "abilities_required":"Blue Trinity",
+               "world":"Deep Jungle",
+               "location":"At the campsite"
+            },
+            {
+               "dalmatians":"37, 38, 39",
+               "abilities_required":"None",
+               "world":"Agrabah",
+               "location":"Chest in Aladdin's house"
+            },
+            {
+               "dalmatians":"46, 47, 48",
+               "abilities_required":"Glide",
+               "world":"Agrabah",
+               "location":"At the Palace Gates"
+            },
+            {
+               "dalmatians":"49, 50, 51",
+               "abilities_required":"Glide",
+               "world":"Agrabah",
+               "location":"On a platform in the entrance room of the Cave of Wonders"
+            },
+            {
+               "dalmatians":"52, 53, 54",
+               "abilities_required":"High Jump",
+               "world":"Agrabah",
+               "location":"On top of a pile of gold in the Treasure Room"
+            },
+            {
+               "dalmatians":"40, 41, 42",
+               "abilities_required":"Glide",
+               "world":"Halloween Town",
+               "location":"Opposite side of the river under the bridge leading to the entrance of Oogie Boogie's manor"
+            },
+            {
+               "dalmatians":"64, 65, 66",
+               "abilities_required":"None",
+               "world":"Halloween Town",
+               "location":"A secret doorway in Moonlight Hill after defeating Oogie Boogie"
+            },
+            {
+               "dalmatians":"67, 68, 69",
+               "abilities_required":"White Trinity",
+               "world":"Halloween Town",
+               "location":"Under a staircase in Guillotine Square (White Trinity - the Dalmatian is in Moonlight Hill where you first enter on the left)"
+            },
+            {
+               "dalmatians":"70, 71, 72",
+               "abilities_required":"Glide",
+               "world":"Halloween Town",
+               "location":"In Guillotine Square, glide to the mouth of a gray pumpkin tower"
+            },
+            {
+               "dalmatians":"55, 56, 57",
+               "abilities_required":"None",
+               "world":"Monstro",
+               "location":"On a platform in Chamber 3"
+            },
+            {
+               "dalmatians":"73, 74, 75",
+               "abilities_required":"High Jump",
+               "world":"Monstro",
+               "location":"In the mouth on top of a pile of wood"
+            },
+            {
+               "dalmatians":"76, 77, 78",
+               "abilities_required":"None",
+               "world":"Monstro",
+               "location":"On a platform in Chamber 3 that can only be reached by a barrel"
+            },
+            {
+               "dalmatians":"79, 80, 81",
+               "abilities_required":"None",
+               "world":"Monstro",
+               "location":"On a platform in Chamber 5"
+            },
+            {
+               "dalmatians":"43, 44, 45",
+               "abilities_required":"None",
+               "world":"Neverland",
+               "location":"On a corner of the Clock Tower (final mix white trinity mark on the deck of Hook's ship)"
+            },
+            {
+               "dalmatians":"82, 83, 84",
+               "abilities_required":"None",
+               "world":"Neverland",
+               "location":"On top of a beam in the ship's hold"
+            },
+            {
+               "dalmatians":"85, 86, 87",
+               "abilities_required":"Yellow Trinity",
+               "world":"Neverland",
+               "location":"In the ship's hold"
+            },
+            {
+               "dalmatians":"88, 89, 90",
+               "abilities_required":"None",
+               "world":"Neverland",
+               "location":"After the fight with Anti-Sora, find a chest in the Captain's Cabin"
+            },
+            {
+               "dalmatians":"61, 62, 63",
+               "abilities_required":"None",
+               "world":"Hollow Bastion",
+               "location":"On your second visit to Hollow Bastion, find a chest in the Grand Hall near the keyhole on a ledge to the left"
+            },
+            {
+               "dalmatians":"91, 92, 93",
+               "abilities_required":"None",
+               "world":"Hollow Bastion",
+               "location":"Use the bubble to reach the bottom of Rising Falls"
+            },
+            {
+               "dalmatians":"94, 95, 96",
+               "abilities_required":"Gravity",
+               "world":"Hollow Bastion",
+               "location":"Lower the floating platform at the Castle Gates with Gravity"
+            },
+            {
+               "dalmatians":"97, 98, 99",
+               "abilities_required":"Gravity",
+               "world":"Hollow Bastion",
+               "location":"Lower the floating platform in the High Tower with Gravity"
+            }
+         ]
+      },
+      {
+         "title":"Magic Unlocks",
+         "anchor":"magic",
+          "description":"It will be well worth your time to get Aeroga. It makes most of the game a heck of a lot easier.",
+         "data":[
+            {
+               "spell_name":"Fire",
+               "how_to_obtain":"Defeat Guard Armor in Traverse Town."
+            },
+            {
+               "spell_name":"Fira",
+               "how_to_obtain":"Defeat Genie Jafar at Agrabah."
+            },
+            {
+               "spell_name":"Firaga",
+               "how_to_obtain":"Seal the keyhole of Hollow Bastion."
+            },
+            {
+               "spell_name":"Blizzard",
+               "how_to_obtain":"Seal the keyhole of Wonderland."
+            },
+            {
+               "spell_name":"Blizzara",
+               "how_to_obtain":"Defeat Jafar at Agrabah."
+            },
+            {
+               "spell_name":"Blizzaga",
+               "how_to_obtain":"Defeat Behemoth in the Hades Cup at the Olympus Coliseum."
+            },
+            {
+               "spell_name":"Thunder",
+               "how_to_obtain":"Destroy all of the barrels in the challenge at the Olympus Coliseum."
+            },
+            {
+               "spell_name":"Thundara",
+               "how_to_obtain":"Defeat Giant Ursula at Atlantica."
+            },
+            {
+               "spell_name":"Thundaga",
+               "how_to_obtain":"Defeat Cerberus in the Hades Cup at the Olympus Coliseum."
+            },
+            {
+               "spell_name":"Cure",
+               "how_to_obtain":"Defeat Clayton in the Deep Jungle."
+            },
+            {
+               "spell_name":"Cura",
+               "how_to_obtain":"Reach the ship deck at Neverland."
+            },
+            {
+               "spell_name":"Curaga",
+               "how_to_obtain":"Talk to Aerith in the Library for a third time at Hollow Bastion."
+            },
+            {
+               "spell_name":"Gravity",
+               "how_to_obtain":"Complete the Phil Cup at the Olympus Coliseum."
+            },
+            {
+               "spell_name":"Gravira",
+               "how_to_obtain":"Seal the keyhole of Halloween Town."
+            },
+            {
+               "spell_name":"Graviga",
+               "how_to_obtain":"Defeat Hades in the Hades Cup at the Olympus Coliseum."
+            },
+            {
+               "spell_name":"Stop",
+               "how_to_obtain":"Defeat Parasite Cage a second time in Monstro."
+            },
+            {
+               "spell_name":"Stopra",
+               "how_to_obtain":"Complete the Pooh's Swing mini-game at the 100 Acre Wood."
+            },
+            {
+               "spell_name":"Stopga",
+               "how_to_obtain":"Defeat the Phantom at Neverland."
+            },
+            {
+               "spell_name":"Aero",
+               "how_to_obtain":"Defeat Opposite Armor at Traverse Town."
+            },
+            {
+               "spell_name":"Aerora",
+               "how_to_obtain":"Use the yellow trinity mark to open the door and reveal a treasure chest at Neverland."
+            },
+            {
+               "spell_name":"Aeroga",
+               "how_to_obtain":"Rescue all 99 dalmatians and return to the Dalmatian House in Traverse Town."
+            }
+         ]
+      }
+   ]

@@ -1,21 +1,8 @@
+
 .tool{
     border:1px solid black;
     background: linear-gradient( to bottom, #1F3B4C, #1F3B4C 50%, #1D303D 50%, #1D303D);
     background-size: 100% 6px;
-}
-.tool ::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
-    border-radius:15px;
-}
-.tool ::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-image: -webkit-gradient(linear, left bottom, left top,
-        color-stop(0.44, rgb(122,153,217)),
-        color-stop(0.72, rgb(73,125,189)),
-        color-stop(0.86, rgb(28,58,148)));
 }
 
 .itemwrap {
@@ -84,6 +71,123 @@
 
 .itemwrap a{ text-decoration:none; color:white; display:block;}
 
+/********* MODAL VIEWS *************************************************/
+
+/* BUTTON */
+.btn:hover {background: #357ebd;}
+.btn-close {
+  color: #aaa;
+  font-size: 30px;
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.btn-close:hover {color: #919191;}
+/* END BUTTON */
+
+/* MODAL */
+.modal:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.modal:target:before {display: block;}
+.modal:target .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  left:15vw;
+}
+.modal-dialog {
+  margin-left: 0px;
+    left:15vw;
+  position: fixed;
+  top: 10vh;
+  z-index: 11;
+  width: 70vw;
+  -webkit-transform: translate(500%, 0);
+  -ms-transform: translate(500%, 0);
+  transform: translate(500%, 0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -moz-transition: -moz-transform 0.2s ease-in-out;
+  -o-transition: -o-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+.modal-body {
+    color: white;
+    padding:0px 0px 0px 20px;
+    max-height:70vh;
+    overflow:auto;
+    margin-right:20px;
+}
+.modal-header {
+    border-radius:9999em;
+    background:#004AFF;
+        padding:5px;
+  border-top: #eee solid 1px;
+}
+
+.modal-header p{
+    margin:0 auto;
+    color:white;
+    font-family:'Orbitron';
+    text-align:center;
+  font-size: 18px;
+}
+.modal-footer {
+    border: 5px solid #004AFF;
+    padding: 5px;
+    border-radius:15px;
+    background-color: #010208;
+    background:linear-gradient( to bottom, #000000, #001B5C);
+}
+.modal-footer p{
+    color:white;
+    margin:auto;
+        width:80%;
+    margin-left:10%;
+      text-align: left;
+    font-family:'Orbitron';
+}
+/* END MODAL */
+.modal-body table{
+    border-collapse:collapse;
+    width:100%;
+}
+
+th,td{text-align:left; padding:5px 15px;font-family:'Orbitron';width:auto;}
+tr:nth-child(even){background-color:#141A2A;}
+tr:nth-child(odd){background-color:#1D3544;}
+tr th{
+max-width:100%;
+white-space:nowrap;
+    font-family:'Ubuntu';
+        font-size:20px;
+}
+tr th[colspan="7"]{
+    text-align:center;
+    font-size:25px;
+
+}
+
+
+tr th[colspan="2"]{
+    text-align:center;
+    font-size:25px;
+    border-top:3px solid white;
+}
+
+tr td[colspan="2"]{
+   width:90%;
+    padding-left:10%;
+}
 
 /********* ANIMATIONS **************************************************/
 @keyframes dance {
@@ -111,4 +215,5 @@
     from{-webkit-transform: translate(0px, 0px); opacity: 1;}
     to {-webkit-transform: translate(-300px, 0px); opacity: 0;}
 }
+
 
