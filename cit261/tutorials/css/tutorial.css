@@ -48,6 +48,7 @@ main{
 
 }
 section{
+    transition:.5s;
     overflow:hidden;
     position:absolute;
     top:150px;
@@ -59,17 +60,19 @@ section{
     background:lightblue;
 }
 section.active{
-    display:block;
+    opacity:1;
+    z-index:1
 }
 section.inactive{
-    display:none;
+    opacity:0;
+    z-index:0;
 }
 #control_buttons{
     position:fixed;
     bottom:30px;
-    left:calc(50% - 250px);
     border-radius:9999em;
-    width:500px;
+    left: 50%;
+    transform: translate(-50%, 0);
     height:20px;
     background:black;
     z-index:1;
@@ -83,7 +86,28 @@ section.inactive{
     background:#ddd;
     padding:2px;
     margin:3px;
+
 }
 .control_button.active{
     background:#777;
+    transition:.5s;
+}
+
+#arrowleft{
+    height:50px;
+    width:50px;
+    background:red;
+    position:fixed;
+    left:0;
+    top:50%;
+    transform:translate(0,-50%);
+}
+#arrowright{
+        height:50px;
+    width:50px;
+    background:red;
+    position:fixed;
+    right:0;
+    top:50%;
+    transform:translate(0,-50%);
 }
