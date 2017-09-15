@@ -1,0 +1,89 @@
+*{font-family:sans-serif;}
+body{margin:0;}
+#modal_space {position:absolute; top:0;}
+/****** RIBBON ********/
+.ribbon:after{
+    content:"";
+    float:left;
+    border:3em solid darkred;
+      border-right-color:transparent;
+}
+.ribbon div{
+    color:white; background:darkred;
+    height:6em;
+    overflow:hidden; position:relative;
+    float:left;
+    margin:0;
+    padding:15px;
+    box-sizing:border-box;
+    vertical-align:middle;
+    width:700px;
+}
+.ribbon div:before{
+    content:"Fluency Demonstrated:";
+    font-weight:bold;
+    font-style:italic;
+}
+#fluency{
+    position:fixed;
+    top:15px;
+    cursor:pointer;
+    width:900px;
+    max-width:calc(900px - 1.5em);
+    transition: 0.2s ease-in-out;
+}
+.fluency-active{left:0;transition:0.5s ease-in-out;}
+.fluency-inactive{left: -700px;}
+.fluency-inactive:hover{left:-675px;}
+/****** END - RIBBON ********/
+main{
+    position:absolute;
+    height:100vh;
+    max-height:100vh;
+    width:100%;
+    padding:150px;
+    background:pink;
+    z-index:-1;
+    box-sizing:border-box;
+
+}
+section{
+    overflow:hidden;
+    position:absolute;
+    top:150px;
+    left:150px;
+    height:calc(100vh - 300px);
+    width:calc(100vw - 300px);
+    box-sizing:border-box;
+    padding:3em;
+    background:lightblue;
+}
+section.active{
+    display:block;
+}
+section.inactive{
+    display:none;
+}
+#control_buttons{
+    position:fixed;
+    bottom:30px;
+    left:calc(50% - 250px);
+    border-radius:9999em;
+    width:500px;
+    height:20px;
+    background:black;
+    z-index:1;
+    display:flex;
+    flex-direction:row;
+}
+.control_button{
+    height:10px;
+    width:10px;
+    border-radius:9999em;
+    background:#ddd;
+    padding:2px;
+    margin:3px;
+}
+.control_button.active{
+    background:#777;
+}
