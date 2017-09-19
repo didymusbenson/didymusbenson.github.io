@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Default Tutorial</title>
+    <link rel="stylesheet" href="./css/tutorial.css">
+    <link href="https://fonts.googleapis.com/css?family=Sarina|Open+Sans:800|Yellowtail|Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div id="fluency" class="fluency-inactive">
+        <div class="ribbon">
+            <div>
+                <p>
+                    Javascript basics: loops, functions, logic, and the rest.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="active">
+            <h2>JavaScript Basics</h2>
+            <div class="cols">
+            <p>                I assume everyone has already taken an introduction to programming course. This slideshow will review the bare basics everybody should know by now. Code examples will be found in boxes like the one below:
+            </p>
+            <pre>console.log("hello world");</pre>
+
+                <p>
+                    These tutorial pages are still under construction so there may be weird quirks in them as they get made. Please let me know if a slide or entire presentation is out of balance for whatever reason.
+                </p>
+                <br><br><br><br>
+
+
+ </div>
+
+        </section>
+        <section class="inactive">
+            <h2>Primatives</h2>
+            <div class="cols">
+            <p>
+                Lets start with the primative datatypes of JavaScript. You've got <em>Boolean, Null, Undefined, Number, String, and Symbol</em> which are your "primatives" (non-objects without methods).
+            </p>
+                <p><em>Booleans</em> hold a value of "true" or "false"; <em>Nulls</em> have one value: null; <em>Undefined</em> variables do not have a value at all.</p>
+
+                <p> <em>Numbers</em> have a <a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format">specific definition</a> that represent a value between -(2<sup>53</sup> - 1) and 2<sup>53</sup> - 1. There is no difference between integers and floats in JS. </p>
+
+                <p>
+                    <em>Strings</em> are made up of text data. There's a little more to it than that, but for our purposes, that's what you need to know.
+                </p>
+                <p>You probably haven't heard of <em>symbols</em> yet. They are a new primative introduced in ECMAScript Edition 6. They are a unique and immutable value that can be used as the key of an Object. Symbols are called atoms. Here's the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">MDN page</a> about symbols.</p>
+
+            </div>
+
+
+        </section>
+        <section class="inactive">
+            <h2>Objects (Arrays)</h2>
+            <div class="cols">
+            <p>
+               As MDN puts it: "an object is a value in memory which is possibly referenced by an identifier." For this review, we are most concerned with the following object types: Arrays, Dates, Functions, and JSONs (covered in another presentation).
+            </p>
+                <p>An <em>Array</em> is a list of variables that can be accessed by an index. The array ["A", "B", "C"], for example contains three string values. The values of an array can be accessed using an index key. See the following code example:</p>
+            <pre>var array = ["A", "B", "C"];
+console.log(array[0]);
+</pre>
+                <p>
+                    The output of this code would be "A". Arrays have several properties and methods that are helpful for manipulating the object data. The two properties that we care about are <em>Array.length</em>, which tells you how many items are in the array, and <em>Array.prototype</em>, which allows you to use certain methods on the individual values within the array.
+                </p>
+                <p>
+                    Some Array.prototype methods to know are <em>.push()</em> (adds items to the end of the array), <em>.pop()</em> (removes the last element from the array and returns it), <em>.indexOf()</em> (tells you the first index of an element in the array with the value you send in), and <em>.toString()</em> (returns a string that represents all of the elements of the array).
+                </p>
+                <p>
+                    You can learn more about arrays <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">here</a> on MDN.
+                </p>
+            </div>
+
+        </section>
+                <section class="inactive">
+            <h2>Objects (Dates)</h2>
+            <div class="cols">
+            <p>
+               I'm not going to lie. In all the time I've been writing Javascript. I have maybe used Date objects once. If you would actually like to learn something about Dates, feel free to read up on <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">MDN</a>. Below are some code examples for syntax:
+            </p>
+            <p>
+                Fun fact: If you initialize a date with a value higher than normally possible (32 days in a month, 13 months in a year), the date object will move
+            </p>
+
+            </div>
+              <pre>// Get current datetime
+var date = new Date();
+// get the day of that date
+date.getDay();
+// get month, full year (4 digits)
+// milliseconds, and minutes all
+// follow the same pattern
+</pre>
+
+
+        </section>
+
+            <!--
+
+
+        <section class="inactive">
+            <h2>Slide</h2>
+            <div class="cols">
+            <p>
+               text
+            </p>
+            <pre>code
+</pre>
+            </div>
+
+
+
+        </section>
+-->
+    </main>
+    <div id="arrowleft"></div>
+    <div id="arrowright"></div>
+    <div id="control_buttons">
+
+    </div>
+    <script src="./js/tutorial.js"></script>
+
+</body>
+
+</html>

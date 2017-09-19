@@ -20,7 +20,7 @@ body{margin:0;}
     width:700px;
 }
 .ribbon div:before{
-    content:"Fluency Demonstrated:";
+    content:"Today's Topic:";
     font-weight:bold;
     font-style:italic;
 }
@@ -42,22 +42,27 @@ main{
     max-height:100vh;
     width:100%;
     padding:150px;
-    background:pink;
+
     z-index:-1;
     box-sizing:border-box;
 
 }
 section{
+    display:flex;
+    flex-direction:column;
+    border-radius:30px;
     transition:.5s;
     overflow:hidden;
+
     position:absolute;
     top:150px;
     left:150px;
     height:calc(100vh - 300px);
+    min-height: 400px;
     width:calc(100vw - 300px);
     box-sizing:border-box;
     padding:3em;
-    background:lightblue;
+    box-shadow:5px 5px 5px 5px #999;
 }
 section.active{
     opacity:1;
@@ -93,21 +98,62 @@ section.inactive{
     transition:.5s;
 }
 
-#arrowleft{
+#arrowleft,#arrowright{
     height:50px;
     width:50px;
-    background:red;
+     border: solid black;
+    border-width: 0 20px 20px 0;
+    border-radius:5px;
     position:fixed;
-    left:0;
+    cursor:pointer;
     top:50%;
     transform:translate(0,-50%);
 }
+#arrowleft{
+    left:20px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);}
 #arrowright{
-        height:50px;
-    width:50px;
-    background:red;
-    position:fixed;
-    right:0;
-    top:50%;
-    transform:translate(0,-50%);
+    right:20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+h2{font-size:xx-large;}
+pre{
+    font-family:monospace;
+    background: white;
+    font-size:x-large;
+    width:80%;
+    margin:auto;
+    padding:15px;
+    border: 2px dashed;
+}
+.cols{ width:100%;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    orphans:3;
+    widows:3;
+    -webkit-orphans: 3;
+      -webkit-widows: 3;
+    box-sizing:border-box;
+    height:90%;
+
+}
+section p:first-child{margin-top:0;}
+
+
+section{background:white;}
+main{background:#dadada;}
+
+@media screen and (max-width: 1100px){
+    pre{
+        font-size:large;
+    }
+}
+@media screen and (min-width: 1101px){
+    p{
+        font-size:large;
+    }
 }
