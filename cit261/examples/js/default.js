@@ -46,5 +46,5 @@ if ( window.addEventListener ) {
 
 function awwwwyeeeeee(){
     var easter_egg_basket = document.getElementsByClassName("tool")[0];
-    easter_egg_basket.innerHTML = "<script></script><div class='hue'><audio id='mysound' src='https://upload.wikimedia.org/wikipedia/en/3/3f/Darude_-_Sandstorm.ogg'></audio><div class='bassdrop' onmouseover=\"document.getElementById('mysound').play()\" onmouseout=\"document.getElementById('mysound').pause()\"><img src='./img/hue.PNG'/></div></div><div class='rainbow'><h1 class='ooer'>OH THE HUE-MANATEE!</h1></div>";
+    easter_egg_basket.innerHTML = "<script></script><div class='hue'><audio id='mysound' src='https://upload.wikimedia.org/wikipedia/en/3/3f/Darude_-_Sandstorm.ogg'></audio><div class='bassdrop' onmouseover=\"document.getElementById('mysound').play()\" onmouseout=\"document.getElementById('mysound').pause()\"><img src='./img/hue.png'/></div></div><div class='rainbow'><h1 class='ooer'>OH THE HUE-MANATEE!</h1></div>";
 }
