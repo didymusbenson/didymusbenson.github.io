@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Default Demo Demo</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/video_ajax_local.css">
+    <link href="https://fonts.googleapis.com/css?family=Sarina|Open+Sans:800|Yellowtail|Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="modal_space">
+    </div>
+    <div id="fluency" class="fluency-inactive">
+        <div class="ribbon">
+            <div>
+                <p>
+                    Video tags, Ajax Requests, and Local Storage
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="demo_container">
+        <h1 class="title">Video, Ajax, and Local Storage</h1>
+        <div class="description">
+            <p>
+                In this example I've selected three public domain movies. You can do the following on this page: </p>
+            <ul>
+                <li>"Learn more" about a movie. The page makes an API call to <a target="_blank" href="http://www.theimdbapi.org/#movie">this tool</a> and loads some information about the movie in question.</li>
+                <li>"Watch" the movie, which loads the movie up on the page for your viewing pleasure</li>
+                <li>"Favorite" the movie by clicking the star. It will save your preference to local storage (if you star a movie then leave and come back, it should remain starred)</li>
+            </ul>
+            <p>
+                These movies suck. You can watch them if you want but I wouldn't encourage it. As always my source code is available below for you to review and check my fluency.
+            </p>
+        </div>
+        <div class="tool">
+            <div class="theatre">
+                <video width="100%" controls type="video/mp4" data-movie="dayofresurrection" class="hidden" src="https://ia800501.us.archive.org/27/items/VirusFukkatsuNoHi1980/Virus_Fukkatsu_no_hi.mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video width="100%" controls type="video/mp4" data-movie="phantomfromspace" class="hidden" src="https://ia802308.us.archive.org/10/items/Phantom_From_Space/Phantom_From_Space_512kb.mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video width="100%" controls type="video/mp4" data-movie="werewolfofwashington" class="hidden" src="https://ia800300.us.archive.org/18/items/Werewolf_of_Washington/Werewolf_of_Washington_512kb.mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <h3 class="center">Select a terrible Public Domain film for movie night!</h3>
+
+            <div class="cards">
+                <div class="card">
+
+                    <div class="card-img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMGU2NzI0Y2UtZmY0NS00NTgxLWJmZGQtM2YyNmVjMzY0YzU1XkEyXkFqcGdeQXVyNDYzNTI2ODc@._V1_SY1000_CR0,0,650,1000_AL_.jpg">
+                    </div>
+                    <div class="card-title">
+                        <h3>Day of Resurrection</h3>
+                    </div>
+                    <div class="card-display">
+                        <p data-movie="dayofresurrection" data-action="learn"><a href="#popup">?</a></p>
+                        <p data-movie="dayofresurrection" data-action="watch">▶</p>
+                        <p data-movie="dayofresurrection" data-action="favorite" data-favorited="false">☆</p>
+                    </div>
+
+                </div>
+                <div class="card">
+
+                    <div class="card-img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyMDU0Nzc1NF5BMl5BanBnXkFtZTgwMzc3MDQ1MjE@._V1_.jpg">
+                    </div>
+                    <div class="card-title">
+                        <h3>Phantom From Space</h3>
+                    </div>
+                    <div class="card-display">
+                        <p data-movie="phantomfromspace" data-action="learn"><a href="#popup">?</a></p>
+                        <p data-movie="phantomfromspace" data-action="watch">▶</p>
+                        <p data-movie="phantomfromspace" data-action="favorite" data-favorited="false">☆</p>
+
+                    </div>
+
+                </div>
+                <div class="card">
+
+                    <div class="card-img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BYWMzM2U3NDItNzQ5Yy00NjgxLThiNTEtZWU1OTgwYzdjNDZmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,666,1000_AL_.jpg">
+                    </div>
+                    <div class="card-title">
+                        <h3>Werewolf of Washington</h3>
+                    </div>
+                    <div class="card-display">
+                        <p data-movie="werewolfofwashington" data-action="learn"><a href="#popup">?</a></p>
+                        <p data-movie="werewolfofwashington" data-action="watch">▶</p>
+                        <p data-movie="werewolfofwashington" data-action="favorite" data-favorited="false">☆</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="popup" class="overlay light">
+                <a class="cancel" href="#"></a>
+                <div class="popup">
+                    <h2></h2>
+                    <div class="content">
+                        <p id="desc"></p>
+                        <p id="starring"></p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="rawcode">
+            <p>JavaScript Source:</p>
+            <textarea readonly id="sauce">
+
+            </textarea>
+        </div>
+        <div class="rawcode">
+            <p>CSS Source:</p>
+            <textarea readonly id="css_sauce">
+
+            </textarea>
+        </div>
+    </div>
+
+
+    <script src="./js/default.js"></script>
+    <script src="./js/video_ajax_local.js"></script>
+</body>
+
+</html>
