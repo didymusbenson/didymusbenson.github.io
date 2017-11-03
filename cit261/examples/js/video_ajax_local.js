@@ -111,7 +111,7 @@ function learn(movie) {
             movieclient.open('GET', moviedata);
             movieclient.onreadystatechange = function () {
                 // Fill up the popup with movie info.
-                var data = JSON.parse(movieclient.responseText)
+                var data = JSON.parse(movieclient.responseText);
                 popup.querySelector("h2").innerHTML = data.title;
                 popup.querySelector("#desc").innerHTML = "<em><strong>About: </em></strong>" + data.storyline;
                 popup.querySelector("#starring").innerHTML = "<em><strong>Starring: </em></strong>" + data.stars;
