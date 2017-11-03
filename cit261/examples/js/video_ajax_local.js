@@ -106,7 +106,7 @@ function learn(movie) {
     for (var i = 0; i < movies.length; i++) {
         if (movie == movies[i].name) {
             movie = movies[i].id;
-            var moviedata = "http://www.theimdbapi.org/api/movie?movie_id=" + movie;
+            var moviedata = "https://www.theimdbapi.org/api/movie?movie_id=" + movie;
             var movieclient = new XMLHttpRequest();
             movieclient.open('GET', moviedata);
             movieclient.onreadystatechange = function () {
