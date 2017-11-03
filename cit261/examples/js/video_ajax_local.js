@@ -30,14 +30,13 @@ for (var i = 0; i < watchbuttons.length; i++) {
 }
 for (var i = 0; i < favoritebuttons.length; i++) {
     var moviename = favoritebuttons[i].dataset.movie;
-    if (localStorage.getItem(moviename) && typeof(Storage !== "undefined")){
+    if (localStorage.getItem(moviename) && typeof (Storage !== "undefined")) {
         console.log(localStorage.getItem(moviename))
         favoritebuttons[i].dataset.favorited = localStorage.getItem(moviename);
-        if (favoritebuttons[i].dataset.favorited === "true"){
+        if (favoritebuttons[i].dataset.favorited === "true") {
             favoritebuttons[i].innerHTML = "★";
-        }
-        else{
-             favoritebuttons[i].innerHTML = "☆";
+        } else {
+            favoritebuttons[i].innerHTML = "☆";
         }
 
     }
@@ -53,24 +52,23 @@ for (var i = 0; i < favoritebuttons.length; i++) {
 // Passes the element instead of the movie name, because I'm going to save
 // some crap to local storage.
 function favorite(el) {
-        if (typeof(Storage) !== "undefined") {
+    if (typeof (Storage) !== "undefined") {
         console.log(localStorage.getItem(el.dataset.movie));
-        }
+    }
 
     var movie = el.dataset.movie;
     if (localStorage.getItem(el.dataset.movie) === "true") {
         console.log("it is true, turning to false");
         el.innerHTML = "☆";
         el.dataset.favorited = false;
-        if (typeof(Storage) !== "undefined") {
-        localStorage.setItem(el.dataset.movie, false);
+        if (typeof (Storage) !== "undefined") {
+            localStorage.setItem(el.dataset.movie, false);
         }
-    }
-    else {
+    } else {
         el.innerHTML = "★";
         el.dataset.favorited = true;
-        if (typeof(Storage) !== "undefined") {
-        localStorage.setItem(el.dataset.movie, true);
+        if (typeof (Storage) !== "undefined") {
+            localStorage.setItem(el.dataset.movie, true);
         }
     }
 
@@ -110,11 +108,14 @@ function learn(movie) {
             var movieclient = new XMLHttpRequest();
             movieclient.open('GET', moviedata);
             movieclient.onreadystatechange = function () {
-                // Fill up the popup with movie info.
-                var data = JSON.parse(movieclient.responseText);
-                popup.querySelector("h2").innerHTML = data.title;
-                popup.querySelector("#desc").innerHTML = "<em><strong>About: </em></strong>" + data.storyline;
-                popup.querySelector("#starring").innerHTML = "<em><strong>Starring: </em></strong>" + data.stars;
+               // Wait for the right state change.
+                if (movieclient.readyState == 4 && movieclient.status == 200) {
+                     // Fill up the popup with movie info.
+                    var data = JSON.parse(movieclient.responseText);
+                    popup.querySelector("h2").innerHTML = data.title;
+                    popup.querySelector("#desc").innerHTML = "<em><strong>About: </em></strong>" + data.storyline;
+                    popup.querySelector("#starring").innerHTML = "<em><strong>Starring: </em></strong>" + data.stars;
+                }
             }
             movieclient.send();
         }
