@@ -1,0 +1,111 @@
+body {
+    overflow:hidden;
+    background: #181435;
+}
+h1 {
+    margin:0;
+    margin-top: 20vw;
+    position: relative;
+    font-family: 'Yellowtail', sans-serif;
+    color: #FF2442;
+    font-size: 8vw;
+    background: -webkit-linear-gradient(#FB2F88, #FF2442);
+    padding-left: 50px;
+    padding-right: 50px;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    transform: rotate(-5deg);
+}
+.stroke {
+    position: absolute;
+    z-index: 0;
+    background-image: url('./underline.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 8vw;
+    width: 75vw;
+    bottom: -4vw;
+}
+h2 {
+    margin:0;
+    margin-top:-3vw;
+    font-family: 'Permanent Marker', sans-serif;
+    color: darkred;
+    font-size: 10vw;
+    font-weight: bold;
+    transform: rotate(-5deg);
+
+
+    background: -webkit-linear-gradient(#FF2442, #8b0000);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+.wrapper {
+    display: flex;
+    clear: both;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moon{
+    position:absolute; z-index:-3;
+    width:50vw; top:5vh;
+}
+.retrowavegrid{ z-index:-2;
+    position:absolute;
+    bottom:0;
+    margin:0;
+    padding:0;
+    width:100vw; height:auto;
+}
+
+
+
+/*      background-image:url(./img/moon2.svg);*/
+
+
+/***********************************************************************************
+************** MEDIA SCREENS *******************************************************
+***********************************************************************************/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+}
