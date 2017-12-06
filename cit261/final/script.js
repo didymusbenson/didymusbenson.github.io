@@ -18,7 +18,7 @@ function make_movies() {
     name: "werewolfofwashington",
     title:"Werewolf of Washington",
     poster:"https://images-na.ssl-images-amazon.com/images/M/MV5BYWMzM2U3NDItNzQ5Yy00NjgxLThiNTEtZWU1OTgwYzdjNDZmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
-   genre:"blaxploitation",
+   genre:"horror",
  video:"https://ia800300.us.archive.org/18/items/Werewolf_of_Washington/Werewolf_of_Washington_512kb.mp4",
     id: "tt0070908"
 }];
@@ -61,9 +61,21 @@ function make_ui(movies) {
 // Create click listeners for the "watch", "learn", and "play" buttons.
 function make_listeners() {
     // get buttons
+    var genre_tabs = document.querySelectorAll(".film_nav h3");
+    console.log(genre_tabs);
     var learnbuttons = document.querySelectorAll("p[data-action='learn']");
     var watchbuttons = document.querySelectorAll("p[data-action='watch']");
     var favoritebuttons = document.querySelectorAll("p[data-action='favorite']");
+    //set up genre tabs
+    for(var i = 0; i < genre_tabs.length; i++){
+        if (!genre_tabs[i].dataset.listener) {
+           genre_tabs[i].addEventListener('click', function (event) {
+                changeTabs(this.dataset.target);
+            }, false);
+            genre_tabs[i].dataset.listener = true;
+        }
+    }
+
     //set up learn buttons
     for (var i = 0; i < learnbuttons.length; i++) {
         if (!learnbuttons[i].dataset.listener) {
@@ -128,6 +140,24 @@ function favorite(el) {
     //    console.log("favorite", movie);
 }
 
+// Change the tab on the genre selection area
+function changeTabs(genre){
+    var tabs = document.querySelectorAll(".film_nav h3");
+    var tab_contents = document.querySelectorAll(".cards");
+    tabs.forEach(function(tab){
+        console.log(tab, genre);
+        if (tab.classList.contains("active_tab")){
+            tab.classList.remove("active_tab");
+        }
+        if (tab.dataset.target == genre ){
+            tab.classList.add("active_tab");
+        }
+
+
+
+
+    })
+}
 
 // MAke an API call to get details about a movie - show a popup with those details
 function learn(movie) {
