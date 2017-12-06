@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pubflix</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Sarina|Open+Sans:800|Yellowtail|Permanent+Marker" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="modal_space">
+    </div>
+    <div class="demo_container">
+        <h1 class="title">PubFlix:  Watch Public Domain Movies</h1>
+        <div class="description">
+            <p>
+                Welcome to PubFlix! Below you will find all manner of stupid public domain movies for your viewing pleasure. You can click the question mark to learn more about each movie, or click the star to select your favorites!
+            </p>
+        </div>
+        <div class="tool">
+
+            <div class="theatre">
+            </div>
+
+                <h2>SCIENCE FICTION</h2>
+                <div class="cards SciFi"></div>
+                <h2>HORROR</h2>
+                <div class="cards blaxploitation"></div>
+            <h2>CARTOONS</h2>
+                <div class="cards cartoon"></div>
+            <h2>KUNG FU</h2>
+                <div class="cards kungfu"></div>
+
+
+
+            <div id="popup" class="overlay light">
+                <a class="cancel" href="#"></a>
+                <div class="popup">
+                    <h2></h2>
+                    <div class="content">
+                        <p id="desc"></p>
+                        <p id="starring"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
