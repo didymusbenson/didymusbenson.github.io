@@ -31,6 +31,7 @@ function make_ui(movies) {
     movies.forEach(function (movie) {
         var stringified_movie = JSON.stringify(movie).replace(/\"/g, "'");
         console.log(stringified_movie);
+        console.log(movie.genre);
         var cards = document.querySelector("." + movie.genre );
         cards.innerHTML += "<div class='card'><div class='card-img'><img src='" + movie.poster + "'></div><div class='card-title'><h3>" + movie.title + "</h3></div><div class='card-display'><p data-movie='" + movie.id + "' data-action='learn'><a href='#popup'>?</a></p><p data-movie=\"" + stringified_movie + "\" data-action='watch'>▶</p><p data-movie='" + movie.id + "' data-favorited='false'>☆</p></div></div>";
     });

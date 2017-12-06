@@ -155,6 +155,8 @@ h1{text-align:center;}
     padding: 15px;
 }
 .cards {
+    position:absolute;
+    top:30px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -286,3 +288,8 @@ h1{text-align:center;}
     margin: 0;
 }
 
+.film_shelf{
+    position:relative;
+}
+.film_nav{position:absolute;top:0;height:30px;}
+.film_nav h3{display:inline-block;padding:0px 15px;}
