@@ -1,29 +1,4 @@
-// Build the array of movie objects
-function make_movies() {
-    var movies = [{
-    name: "dayofresurrection",
-        title:"Day of Resurrection",
-    poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BMGU2NzI0Y2UtZmY0NS00NTgxLWJmZGQtM2YyNmVjMzY0YzU1XkEyXkFqcGdeQXVyNDYzNTI2ODc@._V1_SY1000_CR0,0,650,1000_AL_.jpg",
-    video: "https://ia800501.us.archive.org/27/items/VirusFukkatsuNoHi1980/Virus_Fukkatsu_no_hi.mp4",
-    genre: "SciFi",
-    id: "tt0080768"
-}, {
-    name: "phantomfromspace",
-    title:"Phantom From Space",
-    poster: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyMDU0Nzc1NF5BMl5BanBnXkFtZTgwMzc3MDQ1MjE@._V1_.jpg",
-    video:"https://ia802308.us.archive.org/10/items/Phantom_From_Space/Phantom_From_Space_512kb.mp4",
-    genre: "SciFi",
-    id: "tt0046186"
-}, {
-    name: "werewolfofwashington",
-    title:"Werewolf of Washington",
-    poster:"https://images-na.ssl-images-amazon.com/images/M/MV5BYWMzM2U3NDItNzQ5Yy00NjgxLThiNTEtZWU1OTgwYzdjNDZmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
-   genre:"horror",
- video:"https://ia800300.us.archive.org/18/items/Werewolf_of_Washington/Werewolf_of_Washington_512kb.mp4",
-    id: "tt0070908"
-}];
-    return movies;
-}
+
 
 // Add the movies to the page for browsing
 function make_ui(movies) {
@@ -33,24 +8,8 @@ function make_ui(movies) {
         console.log(stringified_movie);
         console.log(movie.genre);
         var cards = document.querySelector("." + movie.genre );
-        cards.innerHTML += "<div class='card'><div class='card-img'><img src='" + movie.poster + "'></div><div class='card-title'><h3>" + movie.title + "</h3></div><div class='card-display'><p data-movie='" + movie.id + "' data-action='learn'><a href='#popup'>?</a></p><p data-movie=\"" + stringified_movie + "\" data-action='watch'>▶</p><p data-movie='" + movie.id + "' data-favorited='false'>☆</p></div></div>";
+        cards.innerHTML += "<div class='card'><div class='card-img'><img src='" + movie.poster + "'></div><div class='card-title'><h3>" + movie.title + "</h3></div><div class='card-display'><p data-movie='" + movie.id + "' data-action='learn'><a href='#popup'>?</a></p><p data-movie=\"" + stringified_movie + "\" data-action='watch'>▶</p><p data-action='favorite' data-movie='" + movie.id + "' data-favorited='false'>☆</p></div></div>";
     });
-
-    /****************************************************************************************
-     *    <div class="card">
-     *        <div class="card-img">
-     *            <img src="movie.poster">
-     *        </div>
-     *        <div class="card-title">
-     *            <h3>movie.title</h3>
-     *        </div>
-     *        <div class="card-display">
-     *            <p data-movie="movie.id" data-action="learn"><a href="#popup">?</a></p>
-     *            <p data-movie="STRINGIFIED MOVIE" data-action="watch">▶</p>
-     *            <p data-movie="movie.id" data-action="favorite" data-favorited="false">☆</p>
-     *        </div>
-     *    </div>
-     ********************************************************************************************/
     // MAYBE: add tabs for genres and a tab for favorites.
     // MAYBE: add sorting (if not tabs) and a way to quickly grab favorites
     make_listeners();
@@ -63,9 +22,9 @@ function make_listeners() {
     // get buttons
     var genre_tabs = document.querySelectorAll(".film_nav h3");
     console.log(genre_tabs);
-    var learnbuttons = document.querySelectorAll("p[data-action='learn']");
-    var watchbuttons = document.querySelectorAll("p[data-action='watch']");
-    var favoritebuttons = document.querySelectorAll("p[data-action='favorite']");
+    var learnbuttons = document.querySelectorAll("[data-action='learn']");
+    var watchbuttons = document.querySelectorAll("[data-action='watch']");
+    var favoritebuttons = document.querySelectorAll("[data-action='favorite']");
     //set up genre tabs
     for(var i = 0; i < genre_tabs.length; i++){
         if (!genre_tabs[i].dataset.listener) {
@@ -152,10 +111,14 @@ function changeTabs(genre){
         if (tab.dataset.target == genre ){
             tab.classList.add("active_tab");
         }
-
-
-
-
+    })
+    tab_contents.forEach(function(tab){
+        if (!tab.classList.contains("hidden")){
+            tab.classList.add("hidden");
+        }
+        if (tab.classList.contains(genre)){
+            tab.classList.remove("hidden");
+        }
     })
 }
 
@@ -196,37 +159,9 @@ function play_movie(movie) {
 //    window.scrollTo(0, 0);
     document.querySelector(".theatre").scrollIntoView();
     // Create video tag in theater
-    /***********************************
-     FORMAT:
-     <video
-        width="100%"
-           controls
-           type="video/mp4"
-           data-movie="movie_obj.name"
-           src="movie_obj.video">
-              Your browser does not support the video tag.
-       </video>
-     *************************************/
 }
 
 
-// OLD PLAY MOVIE FUNCTION FIX THIS
-/*function watch(movie) {
-    // Loop through the movie list and unhide the movie you want to watch.
-    for (var i = 0; i < videos.length; i++) {
-        console.log(videos[i]);
-        if (videos[i].dataset.movie == movie) {
-            videos[i].classList.remove("hidden");
-        } else {
-            if (!videos[i].classList.contains("hidden")) {
-                videos[i].classList.add("hidden");
-            }
-        }
-    }
-}
-*/
-
-
-
+//Calls "Make Movies" from the other script"
 var movies = make_movies();
 make_ui(movies);
