@@ -1,42 +1,14 @@
 *{font-family:sans-serif;}
+body{background:#111; margin:0;}
 #modal_space {position:absolute; top:0;}
 
+.description{color:white; width:50%; margin:0 auto;}
+h1{text-align:center; color:white;}
+h3,h2{color:white;}
+h2{margin-left:10px;font-size:3min;}
 
-h1{text-align:center;}
-.demo_container{
-    width:80vw;
-    max-width:900px;
-    margin:0 auto;
-    margin-top:8em;
-    margin-bottom:8em;
-    border-radius:15px;
-
-}
-.demo_container .tool, .demo_container .description, .demo_container .rawcode{
-    width:90%;
-    margin: auto;
-    margin-bottom:30px;
-}
 .p{margin:0;}
-.fluency-active{left:0;transition:0.5s ease-in-out;}
-.fluency-inactive{left: -700px;}
-.fluency-inactive:hover{left:-675px;}
-.tool{
-    position:relative;
-    z-index:0;
-}
-#sauce, #css_sauce{
-    width:100%;
-    box-sizing:border-box;
-    margin:0;
-    clear:both;
-    font-family:monospace;
-    font-size:large;
-    resize:vertical;
-    min-height:300px;
-}
 
-/********** HUE, THE MANATEE ***************/
 
 .hidden {
     display: none;
@@ -54,41 +26,35 @@ h1{text-align:center;}
 }
 .cards {
     z-index:1;
-    position:absolute;
-    width:calc(100% - 15px) ;
-    border:1px solid black;
-
-    padding:15px;
-    background:white;
-    top:30px;
-    display: flex;
-
-    flex-flow: row wrap;
-    justify-content:space-between;
+  width:100%;
+    display: inline-flex;
+    flex-flow:row;
 }
+
+.back_cards:hover{}
+
 .card:hover {
     box-shadow: 0px 0px 3px 2px #555;
     transition: 0.2s ease-out;
-    transform: scale(1.05);
+    transform: scale(1.5);
+    z-index:2000;
+    box-shadow:5px,5px,5px,white;
 }
 .card {
     position:relative;
     margin-bottom:15px;
     background:white;
     cursor: pointer;
-    flex: 0 calc(33% - 34px);
+    min-width:250px;
     min-height: 250px;
-
-    overflow: hidden;
     display:flex;
         flex-direction:column;
     justify-content:space-between;
     transition: 0.2s ease-out;
-
+    overflow:hidden;
     font-family: 'Montserrat', sans-serif;
+margin:10px;
 
-    border:5px solid black;
-    border-radius:15px;
 
 
 }
@@ -105,14 +71,23 @@ h1{text-align:center;}
     width: 100%;
 }
 
+.card-title{
+    display:flex;
+    position:absolute;
+    color:white;
+    background:rgba(0,0,0,0.4);
+    height:calc(100% - 5vmin - 30px);
+    width:100%;
+}
 .card-title h3 {
-    flex:auto;
-    margin-top: 15px;
 
+    align-self:flex-end;
+    margin-left:5px;
+text-shadow:4px,4px,4px black;
     font-size: 19px;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
-    transform: rotate(-3deg);
+
     vertical-align: middle;
 }
 .card-display p {
@@ -223,21 +198,14 @@ h1{text-align:center;}
 }
 .selection_wrap{position:relative;}
 .film_nav{
-    cursor:pointer;
-    position:absolute;
-    top:0;box-sizing:border-box;
-    height:30px;
-    border-left:1px solid black;border-right:1px solid black;border-top:1px solid black;
-    border-top-left-radius:15px;border-top-right-radius:15px;border-bottom:1px solid white;
+
+ position:relative;
+    box-sizing:border-box;
+
     z-index:3;}
 
 
-.film_nav h3{margin-top:1px;font-size:2.5vmin; display:inline-block;padding:0px 15px;margin:0px 7px; height:29px; line-height:3vmin;}
-.film_nav h3:first-child{margin-left:0;}
-.film_nav h3:last-child{margin-right:0;}
-.film_nav h3.active_tab{border-right:1px solid black; border-top-right-radius:15px;border-left:1px solid black; border-top-left-radius:15px; border-bottom:1px solid white;}
-.film_nav h3:first-child.active_tab{border-left:none;border-right:1px solid black; border-top-right-radius:15px;}
-.film_nav h3:last-child.active_tab{ border-right:none;border-left:1px solid black; border-top-left-radius:15px;}
+.film_nav > h3{font-size:3vmin;}
 
 .card-display p[data-favorited="true"]{
     color:darkgoldenrod;
@@ -249,15 +217,7 @@ h1{text-align:center;}
 ***********************************************************************************/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .cards{top:4vmin;}
-    .card {flex: 0 calc(50% - 34px);}
-    .card-img {max-height:375px;}
-    .demo_container{width:100%;}
-    .demo_container .tool{padding:0; width:100%;}
-    .film_nav h3{font-size:3.5vmin;line-height:calc(4vmin - 1px);height:4vmin;}
-    .film_nav{height:4vmin;}
-    .description p{font-size:2.5vmin;}
-    .title{font-size:6vw;}
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -267,21 +227,14 @@ h1{text-align:center;}
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
-    .title{font-size:6vw;}
-    .cards{top:4vmin;}
-    .card {flex: 0 calc(50% - 34px);}
-    .card-img {max-height:375px;}
-    .demo_container{width:100%;}
-    .demo_container .tool{padding:0; width:100%;}
-    .film_nav h3{font-size:3.5vmin;line-height:calc(4vmin - 1px);height:4vmin;}
-    .film_nav{height:4vmin;}
+
 }
 @media only screen  and (min-device-width : 481px) and (max-device-width : 767px){
-    .film_nav h3{font-size:small;}
+
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .film_nav h3{font-size:2.5vmin;}
+
 }
 
 /* iPads (landscape) ----------- */
