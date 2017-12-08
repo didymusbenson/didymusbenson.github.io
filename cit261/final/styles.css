@@ -147,7 +147,6 @@ h1{text-align:center;}
 }
 
 /******** POPUP CRAP ************/
-
 .overlay {
     position: fixed;
     height:100vh;
@@ -219,13 +218,23 @@ h1{text-align:center;}
 .popup p:last-child {
     margin: 0;
 }
+/*END POPUP*/
 
 .film_shelf{
     position:relative;
 }
 .selection_wrap{position:relative;}
-.film_nav{cursor:pointer;position:absolute;top:0;box-sizing:border-box;height:30px;border-left:1px solid black;border-right:1px solid black;border-top:1px solid black; border-top-left-radius:15px;border-top-right-radius:15px;border-bottom:1px solid white;z-index:3;}
-.film_nav h3{margin-top:1px; display:inline-block;padding:0px 15px;margin:0px 7px; height:29px; line-height:29px;}
+.film_nav{
+    cursor:pointer;
+    position:absolute;
+    top:0;box-sizing:border-box;
+    height:30px;
+    border-left:1px solid black;border-right:1px solid black;border-top:1px solid black;
+    border-top-left-radius:15px;border-top-right-radius:15px;border-bottom:1px solid white;
+    z-index:3;}
+
+
+.film_nav h3{margin-top:1px;font-size:3vmin; display:inline-block;padding:0px 15px;margin:0px 7px; height:29px; line-height:3vmin;}
 .film_nav h3:first-child{margin-left:0;}
 .film_nav h3:last-child{margin-right:0;}
 .film_nav h3.active_tab{border-right:1px solid black; border-top-right-radius:15px;border-left:1px solid black; border-top-left-radius:15px; border-bottom:1px solid white;}
@@ -234,4 +243,53 @@ h1{text-align:center;}
 
 .card-display p[data-favorited="true"]{
     color:darkgoldenrod;
+}
+.theatre{margin:2vmin 0;}
+
+/***********************************************************************************
+************** MEDIA SCREENS *******************************************************
+***********************************************************************************/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .cards{top:4vmin;}
+    .card {flex: 0 calc(50% - 34px);}
+    .card-img {max-height:375px;}
+    .demo_container{width:100%;}
+    .demo_container .tool{padding:0; width:100%;}
+    .film_nav h3{font-size:3.5vmin;line-height:calc(4vmin - 1px);height:4vmin;}
+    .film_nav{height:4vmin;}
+    .description p{font-size:2.5vmin;}
+    .title{font-size:6vw;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    .title{font-size:6vw;}
+    .cards{top:4vmin;}
+    .card {flex: 0 calc(50% - 34px);}
+    .card-img {max-height:375px;}
+    .demo_container{width:100%;}
+    .demo_container .tool{padding:0; width:100%;}
+    .film_nav h3{font-size:3.5vmin;line-height:calc(4vmin - 1px);height:4vmin;}
+    .film_nav{height:4vmin;}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
 }
