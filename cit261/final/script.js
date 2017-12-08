@@ -8,14 +8,18 @@ function make_ui(movies) {
         console.log(stringified_movie);
         console.log(movie.genre);
         var cards = document.querySelector("." + movie.genre );
-        cards.innerHTML += "<div class='card'><div class='card-img'><img src='" + movie.poster + "'></div><div class='card-title'><h3>" + movie.title + "</h3></div><div class='card-display'><p data-movie='" + movie.id + "' data-action='learn'><a href='#popup'>?</a></p><p data-movie=\"" + stringified_movie + "\" data-action='watch'>▶</p><p data-action='favorite' data-movie='" + movie.id + "' data-favorited='false'>☆</p></div></div>";
+        cards.innerHTML += "<div class='card'><div class='card-img' ><img  src='" + movie.poster + "'></div><div class='card-title' data-movie=\"" + stringified_movie + "\" data-action='watch'><h3 >" + movie.title + "</h3></div><div class='card-display'><p data-movie='" + movie.id + "' data-action='learn'><a href='#popup'>?</a></p><p data-movie=\"" + stringified_movie + "\" data-action='watch'>▶</p><p data-action='favorite' data-movie='" + movie.id + "' data-favorited='false'>☆</p></div></div>";
     });
     // MAYBE: add tabs for genres and a tab for favorites.
     // MAYBE: add sorting (if not tabs) and a way to quickly grab favorites
     make_listeners();
 }
 
-
+function move_right(e){
+    var style = window.getComputedStyle(e);
+    var matrix = new WebKitCSSMatrix(style.webkitTransform);
+    e.style.transform = "translateX(calc(" + matrix.m41 + " - 1px) )"
+}
 
 // Create click listeners for the "watch", "learn", and "play" buttons.
 function make_listeners() {
@@ -25,15 +29,11 @@ function make_listeners() {
     var learnbuttons = document.querySelectorAll("[data-action='learn']");
     var watchbuttons = document.querySelectorAll("[data-action='watch']");
     var favoritebuttons = document.querySelectorAll("[data-action='favorite']");
+
+
+
     //set up genre tabs
-    for(var i = 0; i < genre_tabs.length; i++){
-        if (!genre_tabs[i].dataset.listener) {
-           genre_tabs[i].addEventListener('click', function (event) {
-                changeTabs(this.dataset.target);
-            }, false);
-            genre_tabs[i].dataset.listener = true;
-        }
-    }
+
 
     //set up learn buttons
     for (var i = 0; i < learnbuttons.length; i++) {
@@ -154,7 +154,7 @@ function play_movie(movie) {
     //clear the theater first
    var movie_obj = JSON.parse(movie.replace(/\'/g, '"'));
    var theatre = document.querySelector(".theatre");
-   theatre.innerHTML = "<video width=\"100%\" controls type=\"video/mp4\"  data-movie=\"" + movie_obj.name + "\" src=\"" + movie_obj.video + "\"> Your browser does not support the video tag.  </video>";
+   theatre.innerHTML = "<video width=\"100%\" controls autoplay type=\"video/mp4\"  data-movie=\"" + movie_obj.name + "\" src=\"" + movie_obj.video + "\"> Your browser does not support the video tag.  </video>";
     // Scroll to top of page to view movie.
 //    window.scrollTo(0, 0);
     document.querySelector(".theatre").scrollIntoView();

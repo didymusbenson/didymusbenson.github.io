@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vigenere Cipher Demonstration</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/vigenere.css">
+    <link href="https://fonts.googleapis.com/css?family=Sarina|Open+Sans:800|Yellowtail|Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="modal_space">
+    </div>
+    <div id="fluency" class="fluency-inactive">
+        <div class="ribbon">
+            <div>
+                <p>
+                    Loops, Conditional Statements, Functions, Vairables, Parameters, Arrays, Associative Arrays.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="demo_container">
+        <h1 class="title">Vigenere Cipher Demonstration</h1>
+        <div class="description">
+            <p>This tool uses the <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenere Cipher</a> to demonstrate functions, arrays, loops, and other JavaScript basics. It does not cover passing parameters, though with some minor adjustments it could. It works by taking your input string and keyword then translating your output to ciphered text. You can also translate ciphered text back into plaintext if you have the keyword it was encrypted with.</p>
+
+        </div>
+        <div class="tool">
+            <p>Message to encrypt or decrypt:</p>
+            <textarea id="message"></textarea>
+            <div class="justify">
+            <span>Cipher Key: </span><input type="text" id="key"></div>
+            <div class="justify">
+            <button onclick="encrypt()">Encrypt</button><button onclick="decrypt()">Decrypt</button>
+                </div>
+
+            <p>Encrypted or decrypted text:</p>
+            <textarea readonly id="output"></textarea>
+        </div>
+        <div class="raw code">
+        <p>JavaScript Source:</p>
+            <textarea readonly id="sauce">
+
+            </textarea>
+        </div>
+    </div>
+
+
+    <script src="./js/default.js"></script>
+    <script src="./js/new.js"></script>
+</body>
+
+</html>
