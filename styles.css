@@ -1,4 +1,18 @@
-body{background:#181435;}
+body{margin:0;
+    }
+.mybg{
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    overflow:hidden;
+    background-attachment:fixed;
+    background-size:100vh 100vw;
+    background:linear-gradient(0deg, #041445 25%, #EB388A 50%, #FE5C2E 70%, #F8E602);
+}
+.mybg img{
+    position:absolute;
+    bottom:-50px;
+}
 /****** GLOBAL STYLES ****************/
 .img-wrap{border-radius:9999em; height:150px; width:150px; position:relative; overflow:hidden;display:inline-block;}
 .img-wrap img{ width:100%;}
@@ -55,7 +69,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf2fd', end
 
 .wrapper{display:flex; clear:both; justify-content:center;align-items:center;}
 
-.rows{text-align:center;width:800px;position:relative; background:#041445;min-height:100vh;}
+.rows{text-align:center;width:800px;position:relative; border-left:2px solid #FF2442; border-right:2px solid #FF2442;;background:rgba(4,20,69,0.85);min-height:100vh; box-shadow:0px 0px 3px 2px #FF2442; }
 .billboard{ padding-top:50px;}
 .subtitle{color:white; font-family:'Montserrat',sans-serif;width:70%;margin-left:15%; text-align:left;}
 .projects{padding:0px 25px;
