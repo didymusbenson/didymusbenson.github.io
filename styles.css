@@ -28,7 +28,7 @@ background-image:url('./img/moon.PNG');
 }
 
 
-h1{margin-top:-20px;position:relative;font-family:'Yellowtail',sans-serif;color:#FF2442; font-size:75px;
+h1{margin-top:-20px;position:relative;font-family:'Yellowtail',sans-serif;color:#FF2442; font-size:75px; margin-bottom:30px;
   background: -webkit-linear-gradient(#FB2F88, #FF2442);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,7 +71,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf2fd', end
 
 .rows{text-align:center;width:800px;position:relative; border-left:2px solid #FF2442; border-right:2px solid #FF2442;;background:rgba(4,20,69,0.85);min-height:100vh; box-shadow:0px 0px 3px 2px #FF2442; }
 .billboard{ padding-top:50px;}
-.subtitle{color:white; font-family:'Montserrat',sans-serif;width:70%;margin-left:15%; text-align:left;}
+.subtitle{color:white; font-family:'Montserrat',sans-serif;width:70%;margin:0 auto; text-align:left;}
 .projects{padding:0px 25px;
 /*    background-image:url('./img/rwave.svg');*/
 
@@ -90,7 +90,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf2fd', end
     border-radius:15px;
     overflow:hidden;
     margin:15px;
-
+    cursor:pointer;
     transition:0.2s ease-out;
     border:2px solid #FF2442;
     font-family:'Montserrat',sans-serif;
