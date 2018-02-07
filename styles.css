@@ -67,7 +67,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf2fd', end
 
 
 
-.wrapper{display:flex; clear:both; justify-content:center;align-items:center;}
+.wrapper{display:flex; justify-content:center;align-items:center;}
 
 .rows{text-align:center;width:800px;position:relative; border-left:2px solid #FF2442; border-right:2px solid #FF2442;;background:rgba(4,20,69,0.85);min-height:100vh; box-shadow:0px 0px 3px 2px #FF2442; }
 .billboard{ padding-top:50px;}
@@ -134,7 +134,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf2fd', end
     font-weight:bold;
     text-decoration:none;
 }
+/********************/
 
+/********************/
 
 
 /***********************************************************************************
