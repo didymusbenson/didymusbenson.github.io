@@ -1,4 +1,4 @@
-body{margin:0;font-family:sans-serif;}
+body{margin:0;font-family:sans-serif;background-color:coral;}
 
 /*BASIC RULES*/
 .section{max-height:100vh;bottom:0; width:100%;min-width:600px;}
@@ -56,15 +56,16 @@ background-size:cover;background-position:50% 50%; position:relative;}
 /* Responsive text sizes for when VW gets wonky----------- */
 @media only screen and (max-width : 972px) {
     h2{font-size:5vmin}
-.section  p{color: white;font-size:3vmin;}
+.section  p{font-size:3vmin;}
     .card {max-width:calc(50vw - 60px); }
-
+    .card p{font-size:2vmin;}
 }
 @media only screen and (max-device-width : 972px) {
     h2{font-size:5vmin}
-.section  p{color: white;font-size:3vmin;}
+.section  p{font-size:3vmin;}
 
     .card {max-width:calc(50vw - 60px); }
+    .card p{font-size:2vmin;}
 
 }
 
