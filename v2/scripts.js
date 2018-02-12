@@ -8,4 +8,5 @@ function toggleCollapse() {
     } else {
         about.classList.add("collapse");
     }
+    ev.preventDefault();
 }
