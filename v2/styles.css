@@ -1,5 +1,7 @@
-body{margin:0;font-family:sans-serif;background-color:coral;}
-
+body{margin:0;font-family:sans-serif;background-color:#54556c;}
+a{color:#adadad;transition:.1s ease-in-out;}
+a:visited{color:#adadad; transition:.1s ease-in-out;}
+a:hover,a:active{color:white;transition:.1s ease-in-out;}
 /*BASIC RULES*/
 .section{max-height:100vh;bottom:0; width:100%;min-width:600px;}
 .section > div{max-height:40vh; display:flex;width:100%;flex-direction:row;  flex-wrap:wrap;}
@@ -8,15 +10,15 @@ body{margin:0;font-family:sans-serif;background-color:coral;}
 h2{color:white; font-size:3rem; margin:0;}
 
 /*BILLBOARD*/
-.billboard{top:0;background-color:cornflowerblue;z-index:0;height:360px;}
+.billboard{top:0;background-color:#115d76;z-index:0;height:360px;}
 .billboard > div > div{max-width:calc(100% - 360px);max-height:calc(40vh - 30px;);padding:30px;padding-right:0px;box-sizing:border-box;}
 .billboard .selfie{width:300px; margin:30px ; height:300px;background-image:url("./img/me.jpg"); background-size:cover; background-position:50% 50%;}
 .billboard h2{margin:0;}
 
 /*MORE ABOUT ME*/
-.about{ height:calc(3rem + 60px); background-color:aquamarine;position:relative;z-index:2;}
+.about{ height:calc(3rem + 60px); background-color:#1c5253;position:relative;z-index:2;}
 
-.about{ height:calc(3rem + 60px); background-color:aquamarine;position:relative;z-index:2; }
+.about{ height:calc(3rem + 60px); background-color:#1c5253;position:relative;z-index:2; }
 .about p {padding:0px 30px;margin:0; width:calc(33% - 60px); flex-grow:1; font-size:1.5rem;}
 .about{height:40vh;
 -webkit-transition: all 500ms cubic-bezier(0.145, 0.860, 0.390, 1);
@@ -37,7 +39,7 @@ h2{color:white; font-size:3rem; margin:0;}
 
 
 /*PROJECTS*/
-.projects{background-color:coral;z-index:4;position:relative;min-height:calc(100vh - 3rem - 420px);}
+.projects{background-color:#54556c;z-index:4;position:relative;min-height:calc(100vh - 3rem - 420px);}
 
 
 /*CARDS*/
@@ -66,7 +68,7 @@ background-size:cover;background-position:50% 50%; position:relative;
     .card {max-width:calc(50vw - 60px); }
     .card p{font-size:2vmin;}
     .about p {padding:0px 30px 30px 30px;margin:0; width:calc(50% - 60px);}
-    .about{height:35rem;}
+    .about{height:40rem;}
 }
 @media only screen and (max-device-width : 972px) {
     h2{font-size:5vmin}
@@ -74,8 +76,8 @@ background-size:cover;background-position:50% 50%; position:relative;
 
     .card {max-width:calc(50vw - 60px); }
     .card p{font-size:2vmin;}
-    .about p {padding:0px 30px;margin:0; width:calc(50% - 60px);}
-    .about{height:35rem;}
+    .about p {padding:0px 30px 30px 30px;margin:0; width:calc(50% - 60px);}
+    .about{height:40rem;}
 
 }
 
