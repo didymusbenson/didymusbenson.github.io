@@ -1,135 +1,77 @@
 <!doctype html>
-
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-
     <title>Andrew Didymus Benson</title>
-
     <link rel="stylesheet" href="./styles.css">
-
     <link href="https://fonts.googleapis.com/css?family=Sarina|Open+Sans:800|Yellowtail|Montserrat" rel="stylesheet">
-
 </head>
-
 <body>
-    <script src="./scripts.js"></script>
-    <div class="mybg"><img src="./img/skyline.svg"/></div>
-    <div class="wrapper">
-        <div class="rows">
-            <div class="bg"></div>
-            <div class="billboard">
-                <div class="img-frame"></div>
-                <div class="img-wrap"><img id="selfie" src="./img/me.jpg" alt="Dashing photo of Andrew Didymus Benson wearing a fetching scarf."></div>
-
-                <h1>Andrew Didymus Benson<div class="stroke"></div></h1>
-
-                <p class="subtitle">Front-end web developer, husband, father, ex-planeswalker, dungeon master, and dang good cook. If you think my work is worth supporting, consider <a href="http://paypal.me/theonlydidymus/1.56">buying me a Coke.</a></p>
-
+    <div class="section billboard">
+        <div>
+            <div>
+                <h2>Andrew Didymus Benson</h2>
+                <p>Front-end web developer, husband, father, ex-planeswalker, dungeon master, and dang good cook. If you think my work is neat, consider <a href="https://linkedin.com/in/didymus">offering me a job</a>!</p>
             </div>
-<!--
-             <div>
-                 <h2>PROFILES</h2>
-                 <div class="cards">
-                  <div class="card">
-                        <a href="https://www.linkedin.com/in/didymus">
-                            <div class="card-img">
-                                <img src="./img/in.PNG">
-                            </div>
-                            <div class="card-title">
-                                <h3>LinkedIn</h3>
-                            </div>
-                            <div class="card-display">
-                                <p>CSS project to emulate Kingdom Hearts UI elements.</p>
-                            </div>
-                        </a>
-                    </div>
-
-                 </div>
-                </div>
--->
-            <div class="projects">
-                <h2>PROJECTS</h2>
-                <div class="cards">
-                        <div class="card">
-                                <a href="./pubflix">
-                                    <div class="card-img">
-                                        <img src="./img/livingdead.jpg">
-                                    </div>
-                                    <div class="card-title">
-                                        <h3>Pubflix</h3>
-                                    </div>
-                                    <div class="card-display">
-                                        <p>A public domain Netflix clone. Not intended as a real streaming service.</p>
-                                    </div>
-                                </a>
-                            </div>
-                    <div class="card">
-                        <a href="https://didymusbenson.github.io/kh-tools/">
-                            <div class="card-img">
-                                <img src="./img/khtools.PNG">
-                            </div>
-                            <div class="card-title">
-                                <h3>KH Reference</h3>
-                            </div>
-                            <div class="card-display">
-                                <p>CSS project to emulate Kingdom Hearts UI elements.</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card">
-                        <a href="https://github.com/didymusbenson/download-dinosaurs">
-                            <div class="card-img">
-                                <img src="./img/dinodownload.PNG">
-                            </div>
-                            <div class="card-title">
-                                <h3>Dino-Downloader</h3>
-                            </div>
-                            <div class="card-display">
-                                <p>A NightmareJS demonstration used to download comics from qwantz.com</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card">
-                        <a href="https://didymusbenson.github.io/Hex-Mapping-Tool/">
-                            <div class="card-img">
-                                <img src="./img/hexmaps.PNG">
-                            </div>
-                            <div class="card-title">
-                                <h3>Hex Mapping Tool</h3>
-                            </div>
-                            <div class="card-display">
-                                <p>WIP tool for creating hexagonal maps</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card">
-                        <a href="./cit261">
-                            <div class="card-img">
-                                <img src="./img/moon2.svg">
-                            </div>
-                            <div class="card-title">
-                                <h3>CIT 261 Links</h3>
-                            </div>
-                            <div class="card-display">
-                                <p>Coursework for CIT 261.</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-                </div>
-                <div>
-                    <p class="subtitle"></p>
-                </div>
-            </div>
+            <div class="selfie"></div>
         </div>
-
-
     </div>
-</body>
+    <div class="section about collapse">
+        <h2>More About Me</h2>
+        <div>
+            <p>I've spent the past four years studying to be the best at what I do. From classwork, to professional projects, to personal passion projects, I'm constantly improving my development skills. I just love learning new things.</p>
+            <p>Some of my favorite things include Science Fiction, Kung Fu, meaty pizza, homemade alfredo sauce, and Spider-Man. Ask me about my favorite comics and we can talk all day about <em>Spidey Loves MJ</em>, an underrated classic.</p>
+            <p>In the workplace I bring a sense of teamwork, urgency, and precision. I'll champion Agile methods forever. I hope to work somewhere that I can be challenged, and accomplish something meaningful I can be proud of.</p>
+        </div>
+    </div>
+    <div class="section projects">
+        <h2>Projects</h2>
+        <div class="cards">
+            <div class="card" style="background-image:url(./img/hexmaps.PNG);">
+                <a href="./Hex-Mapping-Tool">
+                <div class="carddesc" >
+                <h3>Hex Mapping tool</h3>
+                    <p>WIP tool for creating hexagonal maps</p>
+                </div>
+                </a>
+            </div>
+                        <div class="card" style="background-image:url(./img/livingdead.jpg);">
+                <a href="./pubflix">
+                <div class="carddesc">
+                <h3>Pubflix</h3>
+                    <p>A public domain Netflix clone. Not intended as a real streaming service.</p>
+                </div>
+                </a>
+            </div>
+                        <div class="card" style="background-image:url(./img/khtools.PNG);">
+                <a href="./kh-tools">
+                <div class="carddesc">
+                <h3>KH Reference</h3>
+                    <p>CSS project to emulate Kingdom Hearts UI elements.</p>
+                </div>
+                </a>
+            </div>
+                        <div class="card" style="background-image:url(./img/dinodownload.PNG);">
+                <a href="https://github.com/didymusbenson/download-dinosaurs">
 
+                <div class="carddesc">
+                <h3>Dino-Downloader</h3>
+                    <p>A NightmareJS demonstration used to download comics from qwantz.com</p>
+                </div>
+                </a>
+            </div>
+                        <div class="card" style="background-image:url(./img/moon2.svg);">
+                <a href="./cit261">
+                <div class="carddesc">
+                <h3>CIT 261 Links</h3>
+                    <p>Coursework for CIT 261</p>
+                </div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+<script src="./scripts.js"></script>
+</body>
 </html>
