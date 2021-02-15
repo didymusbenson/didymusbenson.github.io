@@ -12,7 +12,7 @@ h2{color:white; font-size:3rem; margin:0;}
 /*BILLBOARD*/
 .billboard{top:0;background-color:#115d76;z-index:0;height:360px;}
 .billboard > div > div{max-width:calc(100% - 360px);max-height:calc(40vh - 30px;);padding:30px;padding-right:0px;box-sizing:border-box;}
-.billboard .selfie{width:300px; margin:30px ; height:300px;background-image:url("./img/me.jpg"); background-size:cover; background-position:50% 50%;}
+.billboard .selfie{width:300px; margin:30px ; height:300px;background-image:url("./img/me.JPG"); background-size:cover; background-position:50% 50%;}
 .billboard h2{margin:0;}
 
 /*MORE ABOUT ME*/
